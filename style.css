@@ -33,3 +33,91 @@ main {
   align-items: center;
   padding: 0 20px;
 }
+
+.navbar {
+  width: 375px;
+  font-size: 32px;
+  font-style: normal;
+  text-align: left;
+  line-height: 44px;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: -10vh;
+}
+
+.nav-logo {
+  height: 100px;
+  margin-top: -6rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+
+.nav-logo .nav-link-1 {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 20px;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 20px;
+  position: relative;
+  left: 0;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 6px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.humburger {
+  display: block;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.humburger.change .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.humburger.change .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.humburger.change .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar.change {
+  right: 0;
+}
+
+.nav-list {
+  width: 129px;
+  list-style: none;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  padding-left: 1.9rem;
+}
+
+.nav-list .nav-item {
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
