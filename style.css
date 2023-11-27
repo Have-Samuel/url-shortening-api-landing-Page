@@ -34,14 +34,6 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: 2rem 1rem 0 2rem;
-  /* gap: 11rem; */
-}
-
-.img {
-  background-image: url('./images/illustration-hero.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .navbar {
