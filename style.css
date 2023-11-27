@@ -22,6 +22,8 @@ main {
   height: 927px;
   background: #fff;
   display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 .header-top {
@@ -31,7 +33,15 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  margin: 2rem 1rem 0 2rem;
+  /* gap: 11rem; */
+}
+
+.img {
+  background-image: url('./images/illustration-hero.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .navbar {
@@ -46,7 +56,7 @@ main {
   flex-direction: column;
   position: absolute;
   top: 0;
-  right: -10vh;
+  right: -250vh;
 }
 
 .nav-logo {
@@ -81,7 +91,7 @@ main {
   margin: 6px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: #968e8e;
 }
 
 .humburger {
