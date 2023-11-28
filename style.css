@@ -38,7 +38,6 @@ main {
 
 .navbar {
   width: 327px;
-  /* font-size: 1rem; */
   font-style: normal;
   text-align: left;
   line-height: 44px;
@@ -92,7 +91,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding-left: 1.9rem; */
   align-items: center;
 }
 
