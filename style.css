@@ -52,6 +52,13 @@ main {
   border-radius: 15px;
 }
 
+hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #968e8e;
+  margin-top: 1rem;
+}
+
 .bar {
   display: block;
   width: 20px;
