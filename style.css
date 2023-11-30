@@ -47,7 +47,7 @@ main {
   flex-direction: column;
   position: absolute;
   top: 0;
-  /* right: -250vh; */
+  right: -250vh;
   margin-top: 6rem;
   border-radius: 15px;
 }
