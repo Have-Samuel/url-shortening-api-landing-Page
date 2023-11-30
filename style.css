@@ -106,3 +106,14 @@ hr {
   color: #fff;
   text-decoration: none;
 }
+
+.sign-Up {
+  width: 279px;
+  height: 48px;
+  background: #7a76ff;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
