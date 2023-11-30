@@ -117,3 +117,8 @@ hr {
   align-items: center;
   margin-top: 1.5rem;
 }
+
+.sign-Up:hover {
+  background: #fff;
+  color: #7a76ff;
+}
