@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #e0dcdc;
+  background: #eff1f7;
 }
 
 main {
@@ -121,4 +121,16 @@ hr {
 .sign-Up:hover {
   background: #fff;
   color: #7a76ff;
+}
+
+.inner-img img {
+  /* background: url('./images/illustration-intro.png') no-repeat; */
+  background-size: contain;
+  /* width: 100%;
+  height: 100%; */
+  width: 427px;
+  height: 300px;
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
 }
