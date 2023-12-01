@@ -11,7 +11,7 @@ body {
   background: #eff1f7;
 }
 
-main {
+.container {
   margin: 0 auto;
   width: 375px;
   background: #fff;
@@ -137,7 +137,6 @@ hr {
 .sec-1 {
   width: 355px;
   height: 289px;
-  /* background: #7a76ff; */
   border-radius: 15px;
   margin: 5.5rem auto 0 auto;
 }
@@ -193,6 +192,9 @@ hr {
   background-color: #34313d;
   border-radius: 15px;
   margin: 5rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
 .mo-form .input {
@@ -204,10 +206,11 @@ hr {
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  /* margin: 2rem auto 0 auto; */
   padding: 1rem;
   border: none;
   font-family: 'poppins', sans-serif;
   font-size: 1rem;
   color: #bfbfbf;
 }
+
+.mo-form 
