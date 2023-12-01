@@ -189,8 +189,8 @@ hr {
 .mo-form {
   width: 327px;
   height: 160px;
-  background-color: #34313d;
-  border-radius: 15px;
+  background-color: #4b3f6b;
+  border-radius: 10px;
   margin: 5rem auto 0 auto;
   display: flex;
   flex-direction: column;
