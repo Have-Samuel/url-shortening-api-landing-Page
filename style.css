@@ -278,6 +278,13 @@ hr {
   letter-spacing: 0.11px;
 }
 
+.text-2 {
+  background-color: #fff;
+  width: 327px;
+  height: 267px;
+  position: relative;
+}
+
 .reco {
   width: 88px;
   height: 88px;
