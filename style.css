@@ -194,23 +194,48 @@ hr {
   margin: 5rem auto 0 auto;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  justify-content: center;
+  gap: 1rem;
 }
 
 .mo-form .input {
   width: 279px;
   height: 48px;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 1rem;
   border: none;
   font-family: 'poppins', sans-serif;
   font-size: 1rem;
   color: #bfbfbf;
+  cursor: pointer;
+  outline: none;
 }
 
-.mo-form 
+.mo-form .btn-1 {
+  width: 279px;
+  height: 48px;
+  background: #2acfcf;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mo-form .btn-1:hover {
+  background: #fff;
+  color: #2acfcf;
+  border: 1px solid #2acfcf;
+}
+
