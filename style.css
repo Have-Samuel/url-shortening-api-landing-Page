@@ -186,3 +186,28 @@ hr {
   color: #2acfcf;
   border: 1px solid #2acfcf;
 }
+
+.mo-form {
+  width: 327px;
+  height: 160px;
+  background-color: #34313d;
+  border-radius: 15px;
+  margin: 5rem auto 0 auto;
+}
+
+.mo-form .input {
+  width: 279px;
+  height: 48px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  /* margin: 2rem auto 0 auto; */
+  padding: 1rem;
+  border: none;
+  font-family: 'poppins', sans-serif;
+  font-size: 1rem;
+  color: #bfbfbf;
+}
