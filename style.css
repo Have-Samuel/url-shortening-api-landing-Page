@@ -425,3 +425,26 @@ hr {
   font-weight: bold;
   color: #fff;
 }
+
+.lower-sec .get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 197px;
+  height: 50px;
+  background-color: #2bd0d0;
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.lower-sec .get-started:hover {
+  background-color: #fff;
+  color: #2bd0d0;
+}
