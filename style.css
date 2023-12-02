@@ -278,10 +278,18 @@ hr {
 }
 
 .text-reco {
-  /* background-color: #fff; */
-  /* width: 327px; */
+  background-color: #fff;
   height: 267px;
   position: relative;
+}
+
+.vl {
+  position: absolute;
+  top: 2.5rem;
+  left: 9.9rem;
+  border-left: 6px solid #2bd0d0;
+  height: 500px;
+  z-index: -1;
 }
 
 .reco {
