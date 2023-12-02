@@ -453,6 +453,34 @@ hr {
   height: 776px;
   width: 375px;
   background-color: #000;
+  text-align: center;
 }
 
-.footer
+.footer-head {
+  text-align: center;
+  color: #fff;
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.head-in {
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.fix-in .items {
+  font-family: 'poppins', sans-serif;
+  list-style: none;
+  color: #bfbfbf;
+  text-transform: capitalize;
+}
+
+.items .item-link {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-family: 'poppins', sans-serif;
+}
