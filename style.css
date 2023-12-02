@@ -448,3 +448,9 @@ hr {
   background-color: #fff;
   color: #2bd0d0;
 }
+
+.footer {
+  height: 776px;
+  width: 375px;
+  background-color: #000;
+}
