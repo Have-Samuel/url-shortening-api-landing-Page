@@ -14,9 +14,9 @@ body {
 .container {
   margin: 0 auto;
   width: 375px;
-  background: #fff;
+  /* background: #fff; */
   height: 927px;
-  border: 2px solid rgb(46, 5, 5);
+  /* border: 2px solid rgb(46, 5, 5); */
 }
 
 .header {
