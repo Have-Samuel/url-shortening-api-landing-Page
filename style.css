@@ -46,8 +46,7 @@ body {
   flex-direction: column;
   position: absolute;
   top: 0;
-
-  /* right: -250vh; */
+  right: -250vh;
   margin: 6rem 1rem 0 1rem;
   border-radius: 15px;
   transition: all 0.5s ease-in-out;
@@ -278,9 +277,9 @@ hr {
   letter-spacing: 0.11px;
 }
 
-.text-2 {
+.text-reco {
   background-color: #fff;
-  width: 327px;
+  /* width: 327px; */
   height: 267px;
   position: relative;
 }
