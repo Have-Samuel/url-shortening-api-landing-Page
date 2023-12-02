@@ -288,7 +288,7 @@ hr {
   top: 2.5rem;
   left: 9.9rem;
   border-left: 6px solid #2bd0d0;
-  height: 500px;
+  height: 900px;
   z-index: -1;
 }
 
@@ -325,4 +325,11 @@ hr {
   text-align: center;
   font-family: 'poppins', sans-serif;
   color: #9e9aa8;
+}
+
+.text-det {
+  margin-top: 5rem;
+  background-color: #fff;
+  height: 267px;
+  position: relative;
 }
