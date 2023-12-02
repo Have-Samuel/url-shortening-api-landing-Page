@@ -14,9 +14,8 @@ body {
 .container {
   margin: 0 auto;
   width: 375px;
-  /* background: #fff; */
+  background: #fff;
   height: 927px;
-  /* border: 2px solid rgb(46, 5, 5); */
 }
 
 .header {
@@ -240,24 +239,18 @@ hr {
 }
 
 .sub-cont {
-  display: none;
   width: 327px;
   height: 1373px;
-  border: 1px solid #f70707;
   margin: 0 auto;
 }
 
 .text-1 {
   width: 327px;
   height: 148px;
-  /* font-size: 1.2rem; */
-  /* color: #34313d; */
   text-align: center;
   margin: 6rem auto;
-  /* font-family: 'poppins', sans-serif; */
   letter-spacing: -0.5px;
   line-height: 1.5;
-  border: 1px solid #e0e0e0;
 }
 
 .text-1 h2 {
