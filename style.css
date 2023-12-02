@@ -240,6 +240,7 @@ hr {
 }
 
 .sub-cont {
+  display: none;
   width: 327px;
   height: 1373px;
   border: 1px solid #f70707;
@@ -409,4 +410,18 @@ hr {
   text-align: center;
   font-family: 'poppins', sans-serif;
   color: #9e9aa8;
+}
+
+.lower-sec {
+  background: url('./images/bg-boost-mobile.svg'), #3a3054;
+  width: 375px;
+  height: 300px;
+}
+
+.lower-sec h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 6.3rem;
+  font-weight: bold;
+  color: #fff;
 }
