@@ -261,7 +261,7 @@ hr {
 
 .text-1 h2 {
   font-size: 1.2rem;
-  /* color: #34313d; */
+  color: #34313d;
   text-align: center;
   margin: 1rem;
   font-family: 'poppins', sans-serif;
@@ -278,7 +278,7 @@ hr {
 }
 
 .text-reco {
-  background-color: #fff;
+  /* background-color: #fff; */
   /* width: 327px; */
   height: 267px;
   position: relative;
@@ -294,7 +294,7 @@ hr {
   bottom: 3rem;
 }
 
-.reco img {
+.reco .img-1 {
   width: 50px;
   height: 50px;
   margin: 1rem auto;
@@ -303,4 +303,18 @@ hr {
   position: absolute;
   top: 0;
   left: 1.15rem;
+}
+
+.text-reco h2 {
+  text-align: center;
+  color: #34313d;
+  font-family: 'poppins', sans-serif;
+}
+
+.text-reco p {
+  width: 275px;
+  margin: 1rem  auto;
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+  color: #9e9aa8;
 }
