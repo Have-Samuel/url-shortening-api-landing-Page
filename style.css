@@ -693,14 +693,37 @@ hr {
     margin-top: 0.5rem;
   }
 
+  .text-det h2 {
+    margin-right: 5.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .text-fully h2 {
+    margin-right: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
   .sub-cont .text-1 h2 {
     font-size: 1.5rem;
+  }
+
+  .text-det p {
+    width: 304px;
+    height: 104px;
+    text-align: left;
   }
 
   .text-reco p {
     width: 304px;
     height: 104px;
     text-align: left;
+  }
+
+  .text-fully p {
+    width: 304px;
+    height: 104px;
+    text-align: left;
+    margin-left: 2rem;
   }
 
   .sub-cont .text-1 p {
@@ -731,7 +754,7 @@ hr {
     left: 9.9rem;
     border-top: 6px solid #2bd0d0;
     z-index: -1;
-    width: 550px;
+    width: 660px;
   }
 
   .text-reco {
@@ -741,5 +764,25 @@ hr {
 
   .reco {
     left: -6.2rem;
+  }
+
+  .text-det {
+    width: 350px;
+    height: 300px;
+    margin-bottom: -1.9rem;
+  }
+
+  .details {
+    left: -6.5rem;
+  }
+
+  .text-fully {
+    width: 350px;
+    height: 300px;
+    margin-bottom: -8.9rem;
+  }
+
+  .fully {
+    left: -6.5rem;
   }
 }
