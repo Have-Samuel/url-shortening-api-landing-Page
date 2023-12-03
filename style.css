@@ -522,8 +522,35 @@ hr {
   }
 
   .desktop-nav {
-    /* width: 1108px; */
-    height: 40px;
+    width: 1440px;
+    /* height: 40px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto 2rem auto;
+    border: 3px solid #fc0404;
+  }
+
+  .desktop-nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .logo-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+
+  .nav-item .nav-link-1 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #0f0f0f;
+    text-decoration: none;
   }
 
   .desktop-img {
@@ -534,10 +561,11 @@ hr {
   }
 
   .inner-img {
+    display: none;
     width: 733px;
     height: 482px;
     position: absolute;
-    top: 0;
+    top: 5rem;
     right: 0;
   }
 }
