@@ -587,6 +587,31 @@ hr {
     width: 50%;
     /* border: 2px solid #1504fc; */
     margin: 0 2rem;
+    color: #9e9aa8;
+  }
+
+  .desktop-nav .units .units-item {
+    cursor: pointer;
+  }
+
+  .desktop-nav .units .shoot {
+    width: 105px;
+    height: 40px;
+    background: #2acfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .desktop-nav .units .shoot:hover {
+    background: #fff;
+    color: #2acfcf;
+    border: 1px solid #2acfcf;
   }
 /* 
   .desktop-img {
