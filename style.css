@@ -202,7 +202,6 @@ hr {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 250%;
-  border: 1px solid #000;
 }
 
 .mo-form .input {
@@ -641,5 +640,37 @@ hr {
     position: absolute;
     top: 10rem;
     right: -11rem;
+  }
+
+  .mo-form {
+    width: 1110px;
+    height: 169px;
+    border-radius: 10px;
+    background-color: #5a4f77;
+    margin: 8rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .mo-form .input {
+    width: 70%;
+    height: 64px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 1.2rem;
+    color: #bfbfbf;
+    cursor: pointer;
+    outline: none;
+    padding-left: 1.5rem;
+  }
+
+  .mo-form .btn-1 {
+    width: 188px;
+    height: 64px;
+    margin: 0;
   }
 }
