@@ -678,21 +678,68 @@ hr {
     height: 585px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 
-  .text-1 h2 {
+  .text-1 {
+    width: 540px;
+    height: 130px;
+  }
+
+  .text-reco h2 {
+    margin-right: 4.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .sub-cont .text-1 h2 {
     font-size: 1.5rem;
   }
 
-  .text-1 p {
+  .text-reco p {
+    width: 304px;
+    height: 104px;
+    text-align: left;
+  }
+
+  .sub-cont .text-1 p {
     width: 540px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #9e9aa8;
     text-align: center;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     letter-spacing: 0;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1110px;
+    height: 390px;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .vl {
+    position: absolute;
+    border-left: 0;
+    top: 11.5rem;
+    bottom: -3.5rem;
+    left: 9.9rem;
+    border-top: 6px solid #2bd0d0;
+    z-index: -1;
+    width: 550px;
+  }
+
+  .text-reco {
+    width: 350px;
+    height: 300px;
+  }
+
+  .reco {
+    left: -6.2rem;
   }
 }
