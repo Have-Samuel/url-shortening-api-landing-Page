@@ -188,13 +188,20 @@ hr {
 .mo-form {
   width: 327px;
   height: 160px;
-  background-color: #4b3f6b;
   border-radius: 10px;
+  background-color: #5a4f77;
   margin: 5rem auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+}
+
+.side-img {
+  background: url('./images/bg-shorten-mobile.svg'), #4b3f6b;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 250%;
 }
 
 .mo-form .input {
@@ -311,6 +318,7 @@ hr {
   text-align: center;
   color: #34313d;
   font-family: 'poppins', sans-serif;
+  margin-top: -2rem;
 }
 
 .text-reco p {
@@ -353,6 +361,7 @@ hr {
   text-align: center;
   color: #34313d;
   font-family: 'poppins', sans-serif;
+  margin-top: -2rem;
 }
 
 .text-det p {
@@ -395,11 +404,12 @@ hr {
   text-align: center;
   color: #34313d;
   font-family: 'poppins', sans-serif;
+  margin-top: -2rem;
 }
 
 .text-fully p {
   width: 275px;
-  margin: 1rem  auto;
+  margin: 1rem  auto 1rem auto;
   text-align: center;
   font-family: 'poppins', sans-serif;
   color: #9e9aa8;
@@ -476,6 +486,11 @@ hr {
   margin-top: 1rem;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
+  cursor: pointer;
+}
+
+.items .item-link:hover {
+  text-decoration: underline;
 }
 
 .media-group {
@@ -485,4 +500,304 @@ hr {
   margin: 3rem auto;
   gap: 2rem;
   list-style: none;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+    height: 800px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  .header-top {
+    display: none;
+  }
+
+  .desktop-nav {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  .desktop-img h2 {
+    font-size: 3rem;
+    color: #131212;
+    text-align: center;
+    margin: 0 0 0 3rem;
+    font-family: 'poppins', sans-serif;
+    line-height: 1.05;
+    text-transform: capitalize;
+  }
+
+  .desktop-nav .logo-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+
+  .desktop-nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .nav-list .nav-item a {
+    color: #9e9aa8;
+  }
+
+  .nav-list .nav-item a:hover {
+    color: #2acfcf;
+    text-decoration: underline;
+  }
+
+  .nav-item .nav-link-1 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .desktop-nav .units {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    width: 50%;
+    margin: 0 2rem;
+    color: #9e9aa8;
+  }
+
+  .desktop-nav .units .units-item {
+    cursor: pointer;
+  }
+
+  .desktop-nav .units .shoot {
+    width: 105px;
+    height: 40px;
+    background-color: #2acfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .desktop-nav .units .shoot:hover {
+    background: #fff;
+    color: #2acfcf;
+    border: 1px solid #2acfcf;
+  }
+
+  .sec-1 {
+    width: 563px;
+    height: 351px;
+    border-radius: 15px;
+    margin: 8rem 4rem 0 10rem;
+  }
+
+  .sec-1 h1 {
+    width: 565px;
+    font-size: 4rem;
+    color: #000;
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .sec-1 p {
+    width: 540px;
+    font-size: 1.3rem;
+    color: #9e9aa8;
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .sec-1 .btn {
+    width: 187px;
+    height: 56px;
+    margin: 0;
+  }
+
+  .inner-img {
+    width: 713px;
+    height: 482px;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    top: 10rem;
+    right: -11rem;
+  }
+
+  .mo-form {
+    width: 1110px;
+    height: 169px;
+    border-radius: 10px;
+    background-color: #5a4f77;
+    margin: 8rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mo-form .input {
+    width: 70%;
+    height: 64px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 1.2rem;
+    color: #bfbfbf;
+    cursor: pointer;
+    outline: none;
+    padding-left: 1.5rem;
+  }
+
+  .mo-form .btn-1 {
+    width: 188px;
+    height: 64px;
+    margin: 0;
+  }
+
+  .sub-cont {
+    width: 1110px;
+    height: 585px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text-1 {
+    width: 540px;
+    height: 130px;
+  }
+
+  .text-reco h2 {
+    margin-right: 4.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .text-det h2 {
+    margin-right: 5.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .text-fully h2 {
+    margin-right: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .sub-cont .text-1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-det p {
+    width: 304px;
+    height: 104px;
+    text-align: left;
+  }
+
+  .text-reco p {
+    width: 304px;
+    height: 104px;
+    text-align: left;
+  }
+
+  .text-fully p {
+    width: 304px;
+    height: 104px;
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .sub-cont .text-1 p {
+    width: 540px;
+    font-size: 1rem;
+    color: #9e9aa8;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1110px;
+    /* height: 390px; */
+    gap: 2rem;
+    position: relative;
+    border: 2px solid red;
+    margin-bottom: 5rem;
+  }
+
+  .vl {
+    position: absolute;
+    border-left: 0;
+    top: 11.5rem;
+    bottom: -3.5rem;
+    left: 9.9rem;
+    border-top: 6px solid #2bd0d0;
+    z-index: -1;
+    width: 660px;
+  }
+
+  .text-reco {
+    width: 350px;
+    height: 300px;
+  }
+
+  .reco {
+    left: -6.2rem;
+  }
+
+  .text-det {
+    width: 350px;
+    height: 300px;
+    margin-bottom: -1.9rem;
+  }
+
+  .details {
+    left: -6.5rem;
+  }
+
+  .text-fully {
+    width: 350px;
+    height: 300px;
+    margin-bottom: -8.9rem;
+  }
+
+  .fully {
+    left: -6.5rem;
+  }
+
+  .lower-sec {
+    margin-top: 4rem;
+    width: 1440px;
+    height: 250px;
+  }
 }
