@@ -512,6 +512,10 @@ hr {
     height: 800px;
   }
 
+  .navbar {
+    display: none;
+  }
+
   .humburger {
     display: none;
   }
@@ -635,9 +639,13 @@ hr {
   }
 
   .inner-img {
-    width: 733px;
+    width: 713px;
     height: 482px;
     position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: content-box;
     top: 10rem;
     right: -11rem;
   }
@@ -739,11 +747,12 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     width: 1110px;
-    height: 390px;
+    /* height: 390px; */
     gap: 2rem;
     position: relative;
+    border: 2px solid red;
+    margin-bottom: 5rem;
   }
 
   .vl {
@@ -784,5 +793,11 @@ hr {
 
   .fully {
     left: -6.5rem;
+  }
+
+  .lower-sec {
+    margin-top: 4rem;
+    width: 1440px;
+    height: 250px;
   }
 }
