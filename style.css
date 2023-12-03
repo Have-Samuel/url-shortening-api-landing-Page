@@ -650,7 +650,6 @@ hr {
     margin: 8rem auto 0 auto;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
   }
 
@@ -672,5 +671,28 @@ hr {
     width: 188px;
     height: 64px;
     margin: 0;
+  }
+
+  .sub-cont {
+    width: 1110px;
+    height: 585px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text-1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-1 p {
+    width: 540px;
+    font-size: 1.2rem;
+    color: #9e9aa8;
+    text-align: center;
+    /* margin: 0 auto; */
+    letter-spacing: 0;
   }
 }
