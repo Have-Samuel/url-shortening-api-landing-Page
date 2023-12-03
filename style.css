@@ -188,13 +188,21 @@ hr {
 .mo-form {
   width: 327px;
   height: 160px;
-  background-color: #4b3f6b;
   border-radius: 10px;
+  background-color: #5a4f77;
   margin: 5rem auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+}
+
+.side-img {
+  background: url('./images/bg-shorten-mobile.svg'), #4b3f6b;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 250%;
+  border: 1px solid #000;
 }
 
 .mo-form .input {
@@ -311,6 +319,7 @@ hr {
   text-align: center;
   color: #34313d;
   font-family: 'poppins', sans-serif;
+  margin-top: -2rem;
 }
 
 .text-reco p {
@@ -353,6 +362,7 @@ hr {
   text-align: center;
   color: #34313d;
   font-family: 'poppins', sans-serif;
+  margin-top: -2rem;
 }
 
 .text-det p {
@@ -395,11 +405,12 @@ hr {
   text-align: center;
   color: #34313d;
   font-family: 'poppins', sans-serif;
+  margin-top: -2rem;
 }
 
 .text-fully p {
   width: 275px;
-  margin: 1rem  auto;
+  margin: 1rem  auto 1rem auto;
   text-align: center;
   font-family: 'poppins', sans-serif;
   color: #9e9aa8;
@@ -476,6 +487,11 @@ hr {
   margin-top: 1rem;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
+  cursor: pointer;
+}
+
+.items .item-link:hover {
+  text-decoration: underline;
 }
 
 .media-group {
