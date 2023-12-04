@@ -747,10 +747,8 @@ hr {
     justify-content: center;
     align-items: center;
     width: 1110px;
-    /* height: 390px; */
     gap: 2rem;
     position: relative;
-    border: 2px solid red;
     margin-bottom: 5rem;
   }
 
@@ -768,6 +766,7 @@ hr {
   .text-reco {
     width: 350px;
     height: 300px;
+    cursor: pointer;
   }
 
   .reco {
@@ -778,6 +777,7 @@ hr {
     width: 350px;
     height: 300px;
     margin-bottom: -1.9rem;
+    cursor: pointer;
   }
 
   .details {
@@ -788,6 +788,7 @@ hr {
     width: 350px;
     height: 300px;
     margin-bottom: -8.9rem;
+    cursor: pointer;
   }
 
   .fully {
@@ -795,8 +796,25 @@ hr {
   }
 
   .lower-sec {
-    margin-top: 4rem;
-    width: 1440px;
+    background: url('./images/bg-boost-desktop.svg'), #3a3054;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    width: 100%;
     height: 250px;
+    margin: 17rem auto 0 auto;
+  }
+
+  .lower-sec h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+    font-weight: bold;
+  }
+
+  .lower-sec .get-started {
+    width: 197px;
+    height: 56px;
+    margin-top: 2rem;
   }
 }
