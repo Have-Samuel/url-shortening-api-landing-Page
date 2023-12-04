@@ -255,6 +255,17 @@ hr {
   border: 1px solid #2acfcf;
 }
 
+.display {
+  background-color: #fff;
+  width: 327px;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .sub-cont {
   width: 327px;
   height: 1373px;
