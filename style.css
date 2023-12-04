@@ -9,6 +9,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: #eff1f7;
+  overflow-x: hidden;
 }
 
 .container {
@@ -48,7 +49,6 @@ body {
   right: -250vh;
   margin: 6rem 1rem 0 1rem;
   border-radius: 15px;
-  transition: all 0.5s ease-in-out;
   z-index: 100;
 }
 
@@ -75,19 +75,19 @@ hr {
   cursor: pointer;
 }
 
-.humburger.change .bar:nth-child(2) {
+.humburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.humburger.change .bar:nth-child(1) {
+.humburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.humburger.change .bar:nth-child(3) {
+.humburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-.navbar.change {
+.navbar.active {
   right: 0;
 }
 
@@ -107,6 +107,11 @@ hr {
   text-decoration: none;
 }
 
+.nav-item .nav-link-1:hover {
+  color: #2acfcf;
+  text-decoration: underline;
+}
+
 .sign-Up {
   width: 279px;
   height: 48px;
@@ -116,11 +121,16 @@ hr {
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
+  text-decoration: none;
 }
 
 .sign-Up:hover {
   background: #fff;
   color: #7a76ff;
+}
+
+.nav-item .sign-Up:hover {
+  text-decoration: none;
 }
 
 .inner-img {
