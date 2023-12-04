@@ -510,6 +510,7 @@ hr {
   .container {
     width: 100%;
     height: 800px;
+    margin: 0 auto;
   }
 
   .navbar {
@@ -639,15 +640,13 @@ hr {
   }
 
   .inner-img {
-    width: 713px;
+    width: 600px;
     height: 482px;
     position: absolute;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-clip: content-box;
+    background-size: cover;
     top: 10rem;
     right: -11rem;
+    margin-right: 11rem;
   }
 
   .mo-form {
@@ -748,10 +747,8 @@ hr {
     justify-content: center;
     align-items: center;
     width: 1110px;
-    /* height: 390px; */
     gap: 2rem;
     position: relative;
-    border: 2px solid red;
     margin-bottom: 5rem;
   }
 
@@ -769,6 +766,7 @@ hr {
   .text-reco {
     width: 350px;
     height: 300px;
+    cursor: pointer;
   }
 
   .reco {
@@ -779,6 +777,7 @@ hr {
     width: 350px;
     height: 300px;
     margin-bottom: -1.9rem;
+    cursor: pointer;
   }
 
   .details {
@@ -789,6 +788,7 @@ hr {
     width: 350px;
     height: 300px;
     margin-bottom: -8.9rem;
+    cursor: pointer;
   }
 
   .fully {
@@ -796,8 +796,64 @@ hr {
   }
 
   .lower-sec {
-    margin-top: 4rem;
-    width: 1440px;
+    background: url('./images/bg-boost-desktop.svg'), #3a3054;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    width: 100%;
     height: 250px;
+    margin: 17rem auto 0 auto;
+  }
+
+  .lower-sec h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+    font-weight: bold;
+  }
+
+  .lower-sec .get-started {
+    width: 197px;
+    height: 56px;
+    margin-top: 2rem;
+  }
+
+  .footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .all {
+    display: flex;
+    width: 1250px;
+    margin: 2rem auto 0 auto;
+  }
+
+  .footer-head {
+    padding-top: 1rem;
+  }
+
+  .grab {
+    display: flex;
+    margin: 0 auto;
+    gap: 5rem;
+  }
+
+  .grab .fix-in {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .fix-in .items {
+    text-align: left;
+  }
+
+  .media-group {
+    margin-top: 2rem;
   }
 }
