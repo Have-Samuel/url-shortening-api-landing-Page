@@ -510,6 +510,7 @@ hr {
   .container {
     width: 100%;
     height: 800px;
+    margin: 0 auto;
   }
 
   .navbar {
@@ -639,15 +640,13 @@ hr {
   }
 
   .inner-img {
-    width: 713px;
+    width: 600px;
     height: 482px;
     position: absolute;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-clip: content-box;
+    background-size: cover;
     top: 10rem;
     right: -11rem;
+    margin-right: 11rem;
   }
 
   .mo-form {
