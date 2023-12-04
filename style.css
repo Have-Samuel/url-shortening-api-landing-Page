@@ -817,4 +817,34 @@ hr {
     height: 56px;
     margin-top: 2rem;
   }
+
+  .footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .all {
+    display: flex;
+    width: 1250px;
+    margin: 2rem auto 0 auto;
+  }
+
+  .footer-head {
+    padding-top: 1.5rem;
+  }
+
+  .grab {
+    display: flex;
+    margin: 0 auto;
+    gap: 5rem;
+  }
+
+  .grab .fix-in {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
