@@ -17,7 +17,7 @@ async function shortenUrl(url) {
   // Try Block will execute when we have a
   // successful shortening of the LINK
   try {
-    const res = await fetch(`https://cleanuri.com/api/v1/shorten?url=${url}`)
+    const res = await fetch(`https://cleanuri.com/api/v1/shorten?url=${url}`);
     const data = res.json();
 
     // Create a new Variable and assign a class
@@ -33,13 +33,12 @@ async function shortenUrl(url) {
     copyBtn.addEventListener('click', () => {
       // Adding functionality to the COPY, so we use this below
       // PreviousElementSibling gives us the paragragh
-      navigator.clipboard.writeText(copyBtn.previousElementSibling.textContent)
+      navigator.clipboard.writeText(copyBtn.previousElementSibling.textContent);
     });
     // Reseting the Input field
     input.value = '';
-  }
-  //  CATCH block will handle the errors
-  catch (error) {
+    //  CATCH block will handle the errors
+  } catch (error) {
     console.log(error);
   }
 }
