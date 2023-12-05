@@ -1,5 +1,3 @@
-const { async } = require("q");
-
 // Navbar Menu
 const menuPop = document.querySelector('.humburger');
 const navbar = document.querySelector('.navbar');
@@ -14,13 +12,6 @@ const form = document.querySelector('#form-js');
 const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const url = input.value;
-
-  shortenUrl(url);
-});
-
 // Fetching the Data
 async function shortenUrl(url) {
   // Try Block will execute when we have a
@@ -30,8 +21,8 @@ async function shortenUrl(url) {
     const data = res.json();
 
     // Create a new Variable and assign a class
-    const newUrl = document.createElement('div')
-    newUrl.classList.add('item')
+    const newUrl = document.createElement('div');
+    newUrl.classList.add('item');
     newUrl.innerHTML = `
     <p>${data.display.short_link}</p>
     <button class='newUrl-btn'>Copy</button>
@@ -41,11 +32,21 @@ async function shortenUrl(url) {
     const copyBtn = document.querySelector('.newUrl-btn');
     copyBtn.addEventListener('click', () => {
       // Adding functionality to the COPY, so we use this below
-      navigator.clipboard.writeText
-    })
+      // PreviousElementSibling gives us the paragragh
+      navigator.clipboard.writeText(copyBtn.previousElementSibling.textContent)
+    });
+    // Reseting the Input field
+    input.value = '';
   }
   //  CATCH block will handle the errors
   catch (error) {
-
+    console.log(error);
   }
 }
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const url = input.value;
+
+  shortenUrl(url);
+});
