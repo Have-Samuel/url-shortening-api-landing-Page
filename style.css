@@ -544,6 +544,26 @@ hr {
   display: none;
 }
 
+.display .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+.newUrl-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #2acfcf;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 100%;
