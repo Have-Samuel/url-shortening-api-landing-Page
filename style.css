@@ -266,7 +266,7 @@ hr {
   margin: 0 auto;
 }
 
-.display p {
+/* .display p {
   width: 279px;
   font-size: 0.8rem;
   color: #9e9aa8;
@@ -274,7 +274,7 @@ hr {
   margin: 0 1rem;
   font-family: 'poppins', sans-serif;
   letter-spacing: -0.5px;
-}
+} */
 
 .sub-cont {
   width: 327px;
