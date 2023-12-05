@@ -21,6 +21,7 @@ form.addEventListener('submit', (e) => {
   shortenUrl(url);
 });
 
+// Fetching the Data
 async function shortenUrl(url) {
   // Try Block will execute when we have a
   // successful shortening of the LINK
@@ -31,6 +32,17 @@ async function shortenUrl(url) {
     // Create a new Variable and assign a class
     const newUrl = document.createElement('div')
     newUrl.classList.add('item')
+    newUrl.innerHTML = `
+    <p>${data.display.short_link}</p>
+    <button class='newUrl-btn'>Copy</button>
+    `;
+
+    display.prepend(newUrl);
+    const copyBtn = document.querySelector('.newUrl-btn');
+    copyBtn.addEventListener('click', () => {
+      // Adding functionality to the COPY, so we use this below
+      navigator.clipboard.writeText
+    })
   }
   //  CATCH block will handle the errors
   catch (error) {
