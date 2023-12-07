@@ -15,6 +15,7 @@ const display = document.querySelector('.display');
 
 // Posting Data to the API
 async function postData(url) {
+  try{
   const res = await fetch(`https://cleanuri.com/api/v1/shorten?url=${url}`, {
     mode: 'no-cors',
     credentials: 'include',
@@ -43,8 +44,8 @@ async function postData(url) {
   });
   // Reseting the Input field
   input.value = '';
-
-  return true;
+} catch(err){
+  console.log(err);
 }
 
 form.addEventListener('submit', (e) => {
