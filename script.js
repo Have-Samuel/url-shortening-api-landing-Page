@@ -16,7 +16,7 @@ const display = document.querySelector('.display');
 // Posting Data to the API
 async function postData(url) {
   try {
-    const res = await fetch(`https://cleanuri.com/api/v1/shorten?url=${url}`, {
+    const res = await fetch('https%3A%2F%2Fcleanuri.com%2Fapi%2Fv1%2Fshorten%2Furl%3D%24%7Burl%7D', {
       // mode: 'no-cors',
       // credentials: 'include',
       method: 'POST',
@@ -25,7 +25,7 @@ async function postData(url) {
       // },
       body: JSON.stringify({ url }),
     });
-
+    // https://cleanuri.com/api/v1/shorten?url=${url}
     const data = res.json();
     // Create a new Variable and assign a class
     const newUrl = document.createElement('div');
