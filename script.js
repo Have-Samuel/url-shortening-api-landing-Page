@@ -17,16 +17,16 @@ const display = document.querySelector('.display');
 async function postData(url) {
   try {
     const res = await fetch(`https://cleanuri.com/api/v1/shorten?url=${url}`, {
-      mode: 'no-cors',
-      credentials: 'include',
+      // mode: 'no-cors',
+      // credentials: 'include',
       method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
+      // headers: {
+      //   'Content-type': 'application/json',
+      // },
       body: JSON.stringify({ url }),
     });
 
-    const data = await res.json();
+    const data = res.json();
     // Create a new Variable and assign a class
     const newUrl = document.createElement('div');
     newUrl.classList.add('item');
