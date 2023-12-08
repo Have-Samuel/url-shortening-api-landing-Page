@@ -28,7 +28,7 @@ async function postData(url) {
     const newUrl = document.createElement('div');
     newUrl.classList.add('item');
     newUrl.innerHTML = `
-   <p>${data.display.result_url}</p>
+   <p>${data.result_url}</p>
    <button class='newUrl-btn'>Copy</button>
    `;
 
