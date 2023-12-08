@@ -1,5 +1,4 @@
 // Navbar Menu Popup Functionality
-
 const menuPop = document.querySelector('.humburger');
 const navbar = document.querySelector('.navbar');
 
@@ -8,7 +7,6 @@ menuPop.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
-// Shortening URL
 const form = document.querySelector('#form-js');
 const input = document.querySelector('.input');
 const display = document.querySelector('.display');
@@ -28,7 +26,7 @@ async function postData(url) {
     const newUrl = document.createElement('div');
     newUrl.classList.add('item');
     newUrl.innerHTML = `
-   <p>${data.result_url}</p>
+   <p>${data.display.result_url}</p>
    <button class='newUrl-btn'>Copy</button>
    `;
 
