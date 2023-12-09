@@ -13,20 +13,25 @@ const display = document.querySelector('.display');
 
 // Posting Data to the API
 async function postData(url) {
+  console.log(url);
   try {
-    const res = await fetch(`https://cleanuri.com/api/v1/shorten?url=${url}`, {
-      mode: 'no-cors',
-      credentials: 'include',
+    const res = await fetch('https://cleanuri.com/api/v1/shorten', {
+      // mode: 'no-cors',
+      // credentials: 'include',
       method: 'POST',
-      body: JSON.stringify({ url }),
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `url=${url}`,
     });
 
     const data = await res.json();
+    console.log(data.result_url);
     // Create a new Variable and assign a class
     const newUrl = document.createElement('div');
     newUrl.classList.add('item');
     newUrl.innerHTML = `
-   <p>${data.display.result_url}</p>
+   <p>${data.result_url}</p>
    <button class='newUrl-btn'>Copy</button>
    `;
 
@@ -40,12 +45,13 @@ async function postData(url) {
     // Reseting the Input field
     input.value = '';
   } catch (err) {
-    console.log(err);
+    // console.log(err);
   }
 }
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
+  console.log(url);
 
   postData(url);
 });

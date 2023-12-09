@@ -108,8 +108,7 @@ hr {
 }
 
 .nav-item .nav-link-1:hover {
-  color: #2acfcf;
-  text-decoration: underline;
+  color: #000;
 }
 
 .sign-Up {
@@ -520,14 +519,19 @@ hr {
 }
 
 .items .item-link {
+  width: 112px;
   margin-top: 1rem;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
   cursor: pointer;
 }
 
+.items .wider {
+  width: 107%;
+}
+
 .items .item-link:hover {
-  text-decoration: underline;
+  color: #2bd0d0;
 }
 
 .media-group {
@@ -616,19 +620,14 @@ hr {
     width: 50%;
   }
 
-  .nav-list .nav-item a {
-    color: #9e9aa8;
-  }
-
   .nav-list .nav-item a:hover {
-    color: #2acfcf;
-    text-decoration: underline;
+    color: #000;
   }
 
   .nav-item .nav-link-1 {
     text-transform: capitalize;
     font-size: 1rem;
-    color: #000;
+    color: #9e9aa8;
     text-decoration: none;
   }
 
@@ -895,7 +894,7 @@ hr {
   .grab {
     display: flex;
     margin: 0 auto;
-    gap: 5rem;
+    gap: 8rem;
   }
 
   .grab .fix-in {
@@ -907,10 +906,15 @@ hr {
   }
 
   .fix-in .items {
+    width: 100%;
     text-align: left;
   }
 
   .media-group {
     margin-top: 2rem;
+  }
+
+  .media-group:hover {
+    color: #2bd0d0;
   }
 }
