@@ -528,12 +528,11 @@ hr {
 }
 
 .items .wider {
-  width: 10%;
-  /* margin-top: 1rem; */
+  width: 107%;
 }
 
 .items .item-link:hover {
-  text-decoration: underline;
+  color: #2bd0d0;
 }
 
 .media-group {
