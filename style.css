@@ -520,10 +520,16 @@ hr {
 }
 
 .items .item-link {
+  width: 112px;
   margin-top: 1rem;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
   cursor: pointer;
+}
+
+.items .wider {
+  width: 10%;
+  /* margin-top: 1rem; */
 }
 
 .items .item-link:hover {
@@ -895,7 +901,7 @@ hr {
   .grab {
     display: flex;
     margin: 0 auto;
-    gap: 5rem;
+    gap: 8rem;
   }
 
   .grab .fix-in {
@@ -907,6 +913,7 @@ hr {
   }
 
   .fix-in .items {
+    width: 100%;
     text-align: left;
   }
 
