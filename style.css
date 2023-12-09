@@ -543,10 +543,6 @@ hr {
   list-style: none;
 }
 
-/* .media-group:hover {
-  background-color: #2bd0d0;
-} */
-
 .desktop-nav {
   display: none;
 }
@@ -916,5 +912,9 @@ hr {
 
   .media-group {
     margin-top: 2rem;
+  }
+
+  .media-group:hover {
+    color: #2bd0d0;
   }
 }
