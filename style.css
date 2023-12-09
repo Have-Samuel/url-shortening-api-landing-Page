@@ -543,6 +543,10 @@ hr {
   list-style: none;
 }
 
+/* .media-group:hover {
+  background-color: #2bd0d0;
+} */
+
 .desktop-nav {
   display: none;
 }
