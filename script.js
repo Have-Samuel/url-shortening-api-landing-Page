@@ -17,8 +17,6 @@ function displayData(url) {
   div.classList.add('display');
   div.innerHTML = `
   <div class="display">
-  <div class="display__title">
-  </div>
   <div class="display__url">
     <a href="${url}" target="_blank">${url}</a>
   </div>
