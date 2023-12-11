@@ -260,9 +260,11 @@ hr {
   height: 155px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin: 1rem auto 0 auto;
+  border-radius: 10px;
+  border: 4px solid #31302e;
 }
 
 .display p {
@@ -553,6 +555,8 @@ hr {
   align-items: center;
   flex-direction: column;
   margin-inline: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .newUrl-btn {
