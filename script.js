@@ -16,14 +16,8 @@ function displayData(url) {
   const div = document.createElement('div');
   div.classList.add('display');
   div.innerHTML = `
-  <div class="display">
-  <div class="display__url">
-    <a href="${url}" target="_blank">${url}</a>
-  </div>
-  <div class="display__btn">
+    <a href="${url}">${url}</a>
     <button class="btn" id="copy">Copy</button>
-  </div>
-</div>
   `;
   display.appendChild(div);
 }
