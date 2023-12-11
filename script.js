@@ -12,23 +12,22 @@ const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
 // Create the DOM function to display the data
-function displayData(data) {
-  const newUrl = document.createElement('div');
-  newUrl.classList.add('item');
-  newUrl.innerHTML = `
-   <p>${data.result_url}</p>
-   <button class='newUrl-btn'>Copy</button>
-   `;
-
-  display.prepend(newUrl);
-  const copyBtn = document.querySelector('.newUrl-btn');
-  copyBtn.addEventListener('click', () => {
-    // Adding functionality to the COPY, so we use this below
-    // PreviousElementSibling gives us the paragragh
-    navigator.clipboard.writeText(copyBtn.previousElementSibling.textContent);
-  });
-  // Reseting the Input field
-  input.value = '';
+function displayData(url) {
+  const div = document.createElement('div');
+  div.classList.add('display');
+  div.innerHTML = `
+  <div class="display">
+  <div class="display__title">
+  </div>
+  <div class="display__url">
+    <a href="${url}" target="_blank">${url}</a>
+  </div>
+  <div class="display__btn">
+    <button class="btn" id="copy">Copy</button>
+  </div>
+</div>
+  `;
+  display.appendChild(div);
 }
 
 // Posting Data to the API
