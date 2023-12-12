@@ -16,10 +16,17 @@ function displayData(url) {
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
-    <a href="${url}">${url}</a>
+    <a class="wording" href="${url}">${url}</a>
     <button class="btn" id="copy">Copy</button>
   `;
   display.appendChild(div);
+  // Copy to Clipboard
+  const copy = document.querySelector('#copy');
+  copy.addEventListener('click', () => {
+    navigator.clipboard.writeText(url);
+    console.log('copy');
+  });
+  input.value = '';
 }
 
 // Posting Data to the API
