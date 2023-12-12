@@ -259,35 +259,35 @@ hr {
   height: auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  margin: 1rem auto 0 auto;
-  border-radius: 10px;
-  /* border: 4px solid #31302e; */
-  
+  margin: 1rem auto;
+  /* border-radius: 10px; */
 }
 
 .display-data {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  /* margin: 1rem auto 0 auto; */
   width: 279px;
   /* height: 100%; */
   margin: 1rem auto;
   border-radius: 5px;
-  /* background-color: #2acfcf; */
   background-color: #fff;
-  padding: 1rem;
+  padding: 1rem 0;
+  border: 4px solid #31302e;
 }
 
-.display p {
+.wording {
   /* width: 279px; */
   font-size: 0.8rem;
   color: #9e9aa8;
   text-align: center;
   font-family: 'poppins', sans-serif;
   letter-spacing: -0.5px;
-  margin-top: -2rem;
+  /* margin-top: -2rem; */
 }
 
 .lining {
