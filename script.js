@@ -14,7 +14,7 @@ const display = document.querySelector('.display');
 // Create the DOM function to display the data
 function displayData(url) {
   const div = document.createElement('div');
-  div.classList.add('display');
+  div.classList.add('display-data');
   div.innerHTML = `
     <a href="${url}">${url}</a>
     <button class="btn" id="copy">Copy</button>
