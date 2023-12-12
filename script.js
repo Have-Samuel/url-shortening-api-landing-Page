@@ -16,7 +16,8 @@ function displayData(url) {
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
-    <a class="wording" href="${url}">${url}</a>
+    <p class="wording">${url}</p>
+    <hr>
     <button class="btn" id="copy">Copy</button>
   `;
   display.appendChild(div);
