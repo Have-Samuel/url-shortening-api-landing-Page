@@ -255,7 +255,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  /* border-radius: 10px; */
 }
 
 .display-data {
@@ -263,9 +262,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 1rem auto 0 auto; */
   width: 279px;
-  /* height: 100%; */
   margin: 1rem auto;
   border-radius: 5px;
   background-color: #fff;
