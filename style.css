@@ -292,6 +292,18 @@ hr {
   opacity: 0.5;
 }
 
+.btn-Url {
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #2acfcf;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
 .sub-cont {
   width: 327px;
   height: 1373px;
