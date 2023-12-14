@@ -20,12 +20,12 @@ function displayData(url) {
     <hr>
     <button class="btn" id="copy">Copy</button>
   `;
-  display.appendChild(div);
+  display.prepend(div);
   // Copy to Clipboard
-  const copy = document.querySelector('#copy');
+  const copy = document.querySelector('.btn');
   copy.addEventListener('click', () => {
-    navigator.clipboard.writeText(url);
-    console.log('copy');
+    navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+    console.log(copy.previousElementSibling.textContent);
   });
   input.value = '';
 }
