@@ -19,7 +19,6 @@ function displayData(url) {
   div.innerHTML = `
     <p class="wording">${url}</p>
     <hr>
-    // display the shortened url
     <p class="shortened-url">${data.result_url}</p>
     <button class="btn-Url">Copy</button>
   `;
