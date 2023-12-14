@@ -13,18 +13,29 @@ const display = document.querySelector('.display');
 
 // Create the DOM function to display the data
 function displayData(url) {
+  const data = '';
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
     <p class="wording">${url}</p>
     <hr>
-    <button class="btn-Url" id="copy">Copy</button>
+    // display the shortened url
+    <p class="shortened-url">${data.result_url}</p>
+    <button class="btn-Url">Copy</button>
   `;
-  display.prepend(div);
+  display.append(div);
   // Copy to Clipboard
   const copy = document.querySelector('.btn-Url');
   copy.addEventListener('click', () => {
     navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+    copy.textContent = 'Copied';
+    copy.style.backgroundColor = '#2ecc71';
+    copy.style.color = '#fff';
+    setTimeout(() => {
+      copy.textContent = 'Copy';
+      copy.style.backgroundColor = '#fff';
+      copy.style.color = '#000';
+    }, 2000);
     console.log(copy.previousElementSibling.textContent);
   });
   input.value = '';
