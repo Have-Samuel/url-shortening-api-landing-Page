@@ -18,11 +18,11 @@ function displayData(url) {
   div.innerHTML = `
     <p class="wording">${url}</p>
     <hr>
-    <button class="btn" id="copy">Copy</button>
+    <button class="btn-Url" id="copy">Copy</button>
   `;
   display.prepend(div);
   // Copy to Clipboard
-  const copy = document.querySelector('.btn');
+  const copy = document.querySelector('.btn-Url');
   copy.addEventListener('click', () => {
     navigator.clipboard.writeText(copy.previousElementSibling.textContent);
     console.log(copy.previousElementSibling.textContent);
