@@ -13,13 +13,12 @@ const display = document.querySelector('.display');
 
 // Create the DOM function to display the data
 function displayData(url) {
-  const data = '';
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
     <p class="wording">${url}</p>
     <hr>
-    <p class="shortened-url">${data.result_url}</p>
+    <p class="shortened-url">${url}</p>
     <button class="btn-Url">Copy</button>
   `;
   display.append(div);
