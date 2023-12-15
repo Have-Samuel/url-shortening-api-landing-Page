@@ -12,13 +12,14 @@ const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
 // Create the DOM function to display the data
-function displayData(url) {
+function displayData(data, url) {
+  console.log(data, 'from displayData', data.url);
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
-    <p class="wording">${url}</p>
+    <p class="wording">${data}</p>
     <hr>
-    <p class="shortened-url">${url}</p>
+    <p class="shortened-url">${url.result_url}</p>
     <button class="btn-Url">Copy</button>
   `;
   display.append(div);
@@ -63,7 +64,7 @@ async function postData(url) {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
-  console.log(url);
+  // console.log(url);
 
   postData(url);
   displayData(url);
