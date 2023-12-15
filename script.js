@@ -19,7 +19,7 @@ function displayData(data, url) {
   div.innerHTML = `
     <p class="wording">${data}</p>
     <hr>
-    <p class="shortened-url">${url.result_url}</p>
+    <p class="shortened-url">${url}</p>
     <button class="btn-Url">Copy</button>
   `;
   display.append(div);
