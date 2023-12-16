@@ -13,7 +13,7 @@ const display = document.querySelector('.display');
 
 // Create the DOM function to display the data
 function displayData(data, url) {
-  console.log(data, 'from displayData', data.url);
+  // console.log(data, 'from displayData', data.url);
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
