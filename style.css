@@ -262,7 +262,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 279px;
+  width: 327px;
   margin: 1rem auto;
   border-radius: 5px;
   background-color: #fff;
@@ -278,9 +278,8 @@ body {
 }
 
 hr {
-  width: 80%;
-  margin: 0 auto;
-  border: 1px solid #968e8e;
+  width: 327px;
+  border: 0.1px solid #f0eaea;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
