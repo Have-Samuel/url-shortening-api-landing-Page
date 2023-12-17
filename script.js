@@ -12,33 +12,33 @@ const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
 // Create the DOM function to display the data
-function displayData(data) {
-  // console.log(data, 'from displayData', data.url);
-  const div = document.createElement('div');
-  div.classList.add('display-data');
-  div.innerHTML = `
-    <p class="wording">${data}</p>
-    <hr>
-    <p class="shortened-url">${data.url}</p>
-    <button class="btn-Url">Copy</button>
-  `;
-  display.append(div);
-  // Copy to Clipboard
-  const copy = document.querySelector('.btn-Url');
-  copy.addEventListener('click', () => {
-    navigator.clipboard.writeText(copy.previousElementSibling.textContent);
-    copy.textContent = 'Copied';
-    copy.style.backgroundColor = '#2ecc71';
-    copy.style.color = '#fff';
-    setTimeout(() => {
-      copy.textContent = 'Copy';
-      copy.style.backgroundColor = '#fff';
-      copy.style.color = '#000';
-    }, 2000);
-    console.log(copy.previousElementSibling.textContent);
-  });
-  input.value = '';
-}
+// function displayData(data, url) {
+//   // console.log(data, 'from displayData', data.url);
+//   const div = document.createElement('div');
+//   div.classList.add('display-data');
+//   div.innerHTML = `
+//     <p class="wording">${data}</p>
+//     <hr>
+//     <p class="shortened-url">${url}</p>
+//     <button class="btn-Url">Copy</button>
+//   `;
+//   display.append(div);
+//   // Copy to Clipboard
+//   const copy = document.querySelector('.btn-Url');
+//   copy.addEventListener('click', () => {
+//     navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+//     copy.textContent = 'Copied';
+//     copy.style.backgroundColor = '#2ecc71';
+//     copy.style.color = '#fff';
+//     setTimeout(() => {
+//       copy.textContent = 'Copy';
+//       copy.style.backgroundColor = '#fff';
+//       copy.style.color = '#000';
+//     }, 2000);
+//     console.log(copy.previousElementSibling.textContent);
+//   });
+//   input.value = '';
+// }
 
 // Posting Data to the API
 async function postData(url) {
@@ -61,6 +61,37 @@ async function postData(url) {
     // console.log(err);
   }
 }
+
+
+function displayData(data) {
+  // console.log(data, 'from displayData', data.url);
+  const div = document.createElement('div');
+  div.classList.add('display-data');
+  // SHowing the input url and the shortened url
+  div.innerHTML = `
+    <p class="wording">${data}</p>
+    <hr>
+    <p class="shortened-url">${data}</p>
+    <button class="btn-Url">Copy</button>
+  `;
+  display.append(div);
+  // Copy to Clipboard
+  const copy = document.querySelector('.btn-Url');
+  copy.addEventListener('click', () => {
+    navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+    copy.textContent = 'Copied';
+    copy.style.backgroundColor = '#2ecc71';
+    copy.style.color = '#fff';
+    setTimeout(() => {
+      copy.textContent = 'Copy';
+      copy.style.backgroundColor = '#fff';
+      copy.style.color = '#000';
+    }, 2000);
+    console.log(copy.previousElementSibling.textContent);
+  });
+  input.value = '';
+}
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
