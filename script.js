@@ -12,14 +12,14 @@ const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
 // Create the DOM function to display the data
-function displayData(data, url) {
+function displayData(data) {
   // console.log(data, 'from displayData', data.url);
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
     <p class="wording">${data}</p>
     <hr>
-    <p class="shortened-url">${url}</p>
+    <p class="shortened-url">${data.url}</p>
     <button class="btn-Url">Copy</button>
   `;
   display.append(div);
