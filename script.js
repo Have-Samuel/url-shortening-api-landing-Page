@@ -62,8 +62,7 @@ async function postData(url) {
   }
 }
 
-
-function displayData(data) {
+function displayData(data, shortenedUrl) {
   // console.log(data, 'from displayData', data.url);
   const div = document.createElement('div');
   div.classList.add('display-data');
@@ -71,7 +70,7 @@ function displayData(data) {
   div.innerHTML = `
     <p class="wording">${data}</p>
     <hr>
-    <p class="shortened-url">${data}</p>
+    <p class="shortened-url">${shortenedUrl}</p>
     <button class="btn-Url">Copy</button>
   `;
   display.append(div);
