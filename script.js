@@ -25,20 +25,19 @@ async function postData(url) {
 
     const data = await res.json();
     console.log(data.result_url);
-    // Create a new Variable and assign a class
   } catch (err) {
     // console.log(err);
   }
 }
 
+// Displaying the Data to the DOM
 function displayData(data, shortenedUrl) {
   // console.log(data, 'from displayData', data.url);
   const div = document.createElement('div');
   div.classList.add('display-data');
   // SHowing the input url and the shortened url
   div.innerHTML = `
-    <p class="wording">${data}</p>
-    <hr>
+    <p class="input-url">${data}</p>
     <p class="shortened-url">${shortenedUrl}</p>
     <button class="btn-Url">Copy</button>
   `;
@@ -68,3 +67,10 @@ form.addEventListener('submit', (e) => {
   postData(url);
   displayData(url);
 });
+
+// `
+//     <p class="wording">${data}</p>
+//     <hr>
+//     <p class="shortened-url">${shortenedUrl}</p>
+//     <button class="btn-Url">Copy</button>
+//   `;
