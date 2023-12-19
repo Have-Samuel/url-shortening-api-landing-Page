@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable camelcase */
 // Navbar Menu Popup Functionality
 const menuPop = document.querySelector('.humburger');
@@ -14,15 +15,21 @@ const display = document.querySelector('.display');
 
 // Posting Data to the API
 async function postData(url) {
-  const res = await fetch('https://cleanuri.com/api/v1/shorten', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: `url=${url}`,
-  });
-  const data = await res.json();
-  console.log(data);
+  console.log(url);
+  try {
+    const res = await fetch('https://cleanuri.com/api/v1/shorten', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `url=${url}`,
+    });
+
+    const data = await res.json();
+    console.log(data.result_url);
+  } catch (err) {
+  // console.log(err);
+  }
 }
 
 // Displaying the Data to the DOM
