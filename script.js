@@ -31,14 +31,14 @@ async function postData(url) {
 }
 
 // Displaying the Data to the DOM
-function displayData(data, shortenedUrl) {
-  // console.log(data, 'from displayData', data.url);
+function displayData(data) {
   const div = document.createElement('div');
   div.classList.add('display-data');
-  // SHowing the input url and the shortened url
+  // Showing the input url and the shortened url
   div.innerHTML = `
-    <p class="input-url">${data}</p>
-    <p class="shortened-url">${shortenedUrl}</p>
+    <p class="wording">${data}</p>
+    <hr>
+    <p class="shortened-url">${data.result_url}</p>
     <button class="btn-Url">Copy</button>
   `;
   display.append(div);
@@ -74,3 +74,14 @@ form.addEventListener('submit', (e) => {
 //     <p class="shortened-url">${shortenedUrl}</p>
 //     <button class="btn-Url">Copy</button>
 //   `;
+
+// // console.log(data, 'from displayData', data.url);
+// const div = document.createElement('div');
+// div.classList.add('display-data');
+// // SHowing the input url and the shortened url
+// div.innerHTML = `
+// <p class="wording">${data}</p>
+// <hr>
+// <p class="shortened-url">${shortenedUrl.result_url}</p>
+// <button class="btn-Url">Copy</button>
+// `;
