@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 // Navbar Menu Popup Functionality
 const menuPop = document.querySelector('.humburger');
 const navbar = document.querySelector('.navbar');
@@ -13,32 +14,26 @@ const display = document.querySelector('.display');
 
 // Posting Data to the API
 async function postData(url) {
-  console.log(url);
-  try {
-    const res = await fetch('https://cleanuri.com/api/v1/shorten', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: `url=${url}`,
-    });
-
-    const data = await res.json();
-    console.log(data.result_url);
-  } catch (err) {
-    // console.log(err);
-  }
+  const res = await fetch('https://cleanuri.com/api/v1/shorten', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: `url=${url}`,
+  });
+  const data = await res.json();
+  console.log(data);
 }
 
 // Displaying the Data to the DOM
-function displayData(data) {
+function displayData(data, result_url) {
   const div = document.createElement('div');
   div.classList.add('display-data');
-  // Showing the input url and the shortened url
+  // Show the input url and the shortened url to the DOM
   div.innerHTML = `
     <p class="wording">${data}</p>
     <hr>
-    <p class="shortened-url">${data.result_url}</p>
+    <p class="shortened-url">${result_url}</p>
     <button class="btn-Url">Copy</button>
   `;
   display.append(div);
@@ -46,14 +41,6 @@ function displayData(data) {
   const copy = document.querySelector('.btn-Url');
   copy.addEventListener('click', () => {
     navigator.clipboard.writeText(copy.previousElementSibling.textContent);
-    copy.textContent = 'Copied';
-    copy.style.backgroundColor = '#2ecc71';
-    copy.style.color = '#fff';
-    setTimeout(() => {
-      copy.textContent = 'Copy';
-      copy.style.backgroundColor = '#fff';
-      copy.style.color = '#000';
-    }, 2000);
     console.log(copy.previousElementSibling.textContent);
   });
   input.value = '';
@@ -62,7 +49,7 @@ function displayData(data) {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
-  // console.log(url);
+  console.log(url);
 
   postData(url);
   displayData(url);
@@ -85,3 +72,24 @@ form.addEventListener('submit', (e) => {
 // <p class="shortened-url">${shortenedUrl.result_url}</p>
 // <button class="btn-Url">Copy</button>
 // `;
+
+/* <p class="wording">${data}</p>
+    <hr>
+    <p class="shortened-url">${url}</p>
+    <button class="btn-Url">Copy</button> */
+
+// console.log(url);
+// try {
+//   const res = await fetch('https://cleanuri.com/api/v1/shorten', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/x-www-form-urlencoded',
+//     },
+//     body: `url=${url}`,
+//   });
+
+//   const data = await res.json();
+//   console.log(data.result_url);
+// } catch (err) {
+//   // console.log(err);
+// }
