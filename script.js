@@ -16,8 +16,6 @@ async function postData(url) {
   console.log(url);
   try {
     const res = await fetch('https://cleanuri.com/api/v1/shorten', {
-      // mode: 'no-cors',
-      // credentials: 'include',
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
