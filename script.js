@@ -48,6 +48,7 @@ function displayData(data) {
     <button class="btn-Url">Copy</button>
   `;
   }
+  console.log(data.result_url);
   display.append(div);
   // Copy to Clipboard
   const copy = document.querySelector('.btn-Url');
