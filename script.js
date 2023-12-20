@@ -38,10 +38,7 @@ function displayData(data) {
   // If statement to display the shortened url
   if (data.result_url) {
     div.innerHTML = `
-    <p class="wording">${data}</p>
-    <hr>
     <p class="shortened-url">${data.result_url}</p>
-    <button class="btn-Url">Copy</button>
   `;
   } else {
     div.innerHTML = `
