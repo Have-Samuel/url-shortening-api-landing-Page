@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable camelcase */
 // Navbar Menu Popup Functionality
 const menuPop = document.querySelector('.humburger');
 const navbar = document.querySelector('.navbar');
