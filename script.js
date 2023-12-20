@@ -33,14 +33,14 @@ async function postData(url) {
 }
 
 // Displaying the Data to the DOM
-function displayData(data, result_url) {
+function displayData(data, url) {
   const div = document.createElement('div');
   div.classList.add('display-data');
   // Show the input url and the shortened url to the DOM
   div.innerHTML = `
     <p class="wording">${data}</p>
     <hr>
-    <p class="shortened-url">${result_url}</p>
+    <p class="shortened-url">${url}</p>
     <button class="btn-Url">Copy</button>
   `;
   display.append(div);
