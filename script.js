@@ -47,7 +47,6 @@ function displayData(data) {
   const copy = document.querySelector('.btn-Url');
   copy.addEventListener('click', () => {
     navigator.clipboard.writeText(copy.previousElementSibling.textContent);
-    console.log(copy.previousElementSibling.textContent);
   });
   input.value = '';
 }
