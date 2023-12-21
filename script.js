@@ -94,10 +94,3 @@ form.addEventListener('submit', (e) => {
 // } catch (err) {
 //   // console.log(err);
 // }
-
-// div.innerHTML = `
-// <p class="wording">${data}</p>
-// <hr>
-// <p class="shortened-url">${data.result_url}</p>
-// <button class="btn-Url">Copy</button>
-// `;
