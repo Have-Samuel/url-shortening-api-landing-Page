@@ -36,18 +36,7 @@ function displayData(data) {
   div.classList.add('display-data');
   // Show the input url and the shortened url to the DOM
   // If statement to display the shortened url
-  if (data.url) {
-    div.innerHTML = `
-    <p class="shortened-url">${data.url}</p>
-  `;
-  } else {
-    div.innerHTML = `
-    <p class="wording">${data}</p>
-    <hr>
-    <p class="shortened-url">${data.result_url}</p>
-    <button class="btn-Url">Copy</button>
-  `;
-  }
+
   display.append(div);
   // Copy to Clipboard
   const copy = document.querySelector('.btn-Url');
