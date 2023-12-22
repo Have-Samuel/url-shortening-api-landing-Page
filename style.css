@@ -101,10 +101,10 @@ body {
 }
 
 .nav-item .nav-link-1:hover {
-  color: #000;
+  color: #2bd0d0;
 }
 
-.sign-Up {
+.nav-item .sign-Up {
   width: 279px;
   height: 48px;
   background: #7a76ff;
@@ -116,7 +116,7 @@ body {
   text-decoration: none;
 }
 
-.sign-Up:hover {
+.nav-item .sign-Up:hover {
   background: #fff;
   color: #7a76ff;
 }
@@ -540,17 +540,12 @@ hr {
 }
 
 .items .item-link {
-  /* width: 112px; */
   margin-top: 1rem;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
   cursor: pointer;
   align-items: center;
 }
-
-/* .items .wider {
-  width: 107%;
-} */
 
 .items .item-link:hover {
   color: #2bd0d0;
