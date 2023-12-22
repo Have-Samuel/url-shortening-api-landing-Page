@@ -50,6 +50,23 @@ function displayData(data) {
   });
   input.value = '';
 }
+// If the form has no input, display an error message
+function formError(ele) {
+  const formError = ele.parentElement;
+  const small = formError.querySelector('small');
+  small.innerHTML = 'Please add a link';
+
+  formError.classList.add('error');
+}
+// Validate the form
+function validate() {
+  const inputValue = input.value.trim();
+  if (inputValue === '') {
+    formError(input, 'Please add a link');
+  } else {
+    displayData(inputValue);
+  }
+}
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -58,4 +75,6 @@ form.addEventListener('submit', (e) => {
 
   postData(url);
   displayData(url);
+  validate();
+  formError();
 });

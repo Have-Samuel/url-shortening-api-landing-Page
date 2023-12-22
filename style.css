@@ -10,6 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #eff1f7;
   overflow-x: hidden;
+  margin: 1rem 0;
 }
 
 .container {
@@ -101,10 +102,10 @@ body {
 }
 
 .nav-item .nav-link-1:hover {
-  color: #000;
+  color: #2bd0d0;
 }
 
-.sign-Up {
+.nav-item .sign-Up {
   width: 279px;
   height: 48px;
   background: #7a76ff;
@@ -116,12 +117,9 @@ body {
   text-decoration: none;
 }
 
-.sign-Up:hover {
+.nav-item .sign-Up:hover {
   background: #fff;
   color: #7a76ff;
-}
-
-.nav-item .sign-Up:hover {
   text-decoration: none;
 }
 
@@ -179,12 +177,22 @@ body {
   font-size: 1.2rem;
   color: #fff;
   font-weight: bold;
+  outline: none;
 }
 
 .sec-1 .btn:hover {
   background: #fff;
   color: #2acfcf;
   border: 1px solid #2acfcf;
+}
+
+
+
+.side-img {
+  background: url('./images/bg-shorten-mobile.svg'), #4b3f6b;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 250%;
 }
 
 .mo-form {
@@ -196,18 +204,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
-.side-img {
-  background: url('./images/bg-shorten-mobile.svg'), #4b3f6b;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 250%;
-}
-
 .mo-form .input {
-  width: 279px;
+  position: relative;
+  width: 300px;
   height: 48px;
   background: #fff;
   border-radius: 5px;
@@ -225,7 +228,7 @@ body {
 }
 
 .mo-form .btn-1 {
-  width: 279px;
+  width: 300px;
   height: 48px;
   background: #2acfcf;
   border-radius: 5px;
@@ -245,6 +248,35 @@ body {
   background: #fff;
   color: #2acfcf;
   border: 1px solid #2acfcf;
+}
+
+.form__field {
+  position: relative;
+  width: 300px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.form__field small {
+  visibility: hidden;
+  color: red;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 17px;
+  position: absolute;
+  bottom: -20px;
+  right: 12px;
+}
+
+.form__field.error small {
+  visibility: visible;
+}
+
+.error {
+  color: #f46262;
+  font-size: 0.8rem;
+  margin-left: 1rem;
 }
 
 .display {
@@ -279,9 +311,10 @@ body {
 
 hr {
   width: 327px;
-  border: 0.1px solid #f0eaea;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+  width: 85%;
+  border: 1px solid #a5a3a3;
+  opacity: 0.3;
+  margin: 0.5rem auto;
 }
 
 .lining {
@@ -291,6 +324,7 @@ hr {
 }
 
 .btn-Url {
+  width: 295px;
   padding: 0.5rem 1rem;
   border-radius: 0.2rem;
   color: #fff;
@@ -300,6 +334,13 @@ hr {
   cursor: pointer;
   outline: none;
   border: none;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+}
+
+.btn-Url:hover {
+  opacity: 0.5;
+  color: #7c7676;
 }
 
 .sub-cont {
@@ -344,7 +385,7 @@ hr {
 .vl {
   position: absolute;
   top: 2.5rem;
-  left: 9.9rem;
+  left: 10rem;
   border-left: 6px solid #2bd0d0;
   height: 917px;
   z-index: -1;
@@ -501,6 +542,7 @@ hr {
   outline: none;
   font-family: 'poppins', sans-serif;
   font-weight: bold;
+  font-size: 1.1rem;
   color: #fff;
 }
 
@@ -540,19 +582,20 @@ hr {
 }
 
 .items .item-link {
-  width: 112px;
   margin-top: 1rem;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
-  cursor: pointer;
+  align-items: center;
 }
 
-.items .wider {
-  width: 107%;
+.items .item-link a {
+  text-decoration: none;
+  color: #bfbfbf;
 }
 
-.items .item-link:hover {
+.items .item-link a:hover {
   color: #2bd0d0;
+  cursor: pointer;
 }
 
 .media-group {
@@ -560,7 +603,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin: 3rem auto;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -757,6 +800,48 @@ hr {
     width: 188px;
     height: 64px;
     margin: 0;
+  }
+
+  .display {
+    width: 1110px;
+    height: auto;
+    margin: 0.5rem auto;
+  }
+
+  .display-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .lining {
+    display: none;
+  }
+
+  .wording {
+    font-size: 1rem;
+    letter-spacing: -0.9px;
+    margin-left: 1rem;
+    color: #000;
+  }
+
+  .display-data .shortened-url {
+    display: flex;
+    justify-self: flex-start;
+    margin-left: 10rem;
+  }
+
+  .btn-Url {
+    width: 103px;
   }
 
   .sub-cont {
