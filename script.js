@@ -54,11 +54,13 @@ function displayData(data) {
 function formError() {
   const inputEle = document.querySelector('.input');
   const span = document.createElement('span');
+  span.classList.add('error');
   if (inputEle.value === '') {
-    span.classList.add('error');
+    inputEle.classList.add('error');
     span.textContent = 'Please enter a valid URL';
-    form.inputEle.append(span);
+    inputEle.after(span);
   } else {
+    inputEle.classList.remove('error');
     span.remove();
   }
 }
