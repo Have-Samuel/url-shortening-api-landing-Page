@@ -277,9 +277,10 @@ body {
 
 hr {
   width: 327px;
-  border: 0.1px solid #f0eaea;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+  width: 85%;
+  border: 1px solid #a5a3a3;
+  opacity: 0.3;
+  margin: 0.5rem auto;
 }
 
 .lining {
