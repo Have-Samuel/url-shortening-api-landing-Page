@@ -249,14 +249,6 @@ body {
 .error {
   color: #f46262;
   font-size: 0.8rem;
-  font-family: 'poppins', sans-serif;
-  margin-left: 1rem;
-}
-
-.error-text {
-  color: #f46262;
-  font-size: 0.8rem;
-  font-family: 'poppins', sans-serif;
   margin-left: 1rem;
 }
 
