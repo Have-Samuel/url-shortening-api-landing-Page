@@ -540,16 +540,17 @@ hr {
 }
 
 .items .item-link {
-  width: 112px;
+  /* width: 112px; */
   margin-top: 1rem;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
   cursor: pointer;
+  align-items: center;
 }
 
-.items .wider {
+/* .items .wider {
   width: 107%;
-}
+} */
 
 .items .item-link:hover {
   color: #2bd0d0;
