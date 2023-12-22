@@ -51,6 +51,19 @@ function displayData(data) {
   input.value = '';
 }
 
+// If the form has no input, display an error message
+function formError() {
+  const div = document.createElement('div');
+  div.classList.add('error');
+  div.innerHTML = `
+  <p>Please enter a valid URL</p>
+  `;
+  display.append(div);
+  setTimeout(() => {
+    div.remove();
+  }, 2000);
+}
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
@@ -58,4 +71,6 @@ form.addEventListener('submit', (e) => {
 
   postData(url);
   displayData(url);
+
+  formError();
 });
