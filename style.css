@@ -10,6 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #eff1f7;
   overflow-x: hidden;
+  margin: 1rem 0;
 }
 
 .container {
@@ -290,6 +291,7 @@ hr {
 }
 
 .btn-Url {
+  width: 295px;
   padding: 0.5rem 1rem;
   border-radius: 0.2rem;
   color: #fff;
@@ -299,6 +301,13 @@ hr {
   cursor: pointer;
   outline: none;
   border: none;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+}
+
+.btn-Url:hover {
+  opacity: 0.5;
+  color: #7c7676;
 }
 
 .sub-cont {
