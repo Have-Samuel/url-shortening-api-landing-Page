@@ -542,12 +542,17 @@ hr {
   margin-top: 1rem;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
-  cursor: pointer;
   align-items: center;
 }
 
-.items .item-link:hover {
+.items .item-link a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.items .item-link a:hover {
   color: #2bd0d0;
+  cursor: pointer;
 }
 
 .media-group {
