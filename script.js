@@ -50,16 +50,18 @@ function displayData(data) {
   });
   input.value = '';
 }
-
 // If the form has no input, display an error message
 function formError() {
-  const span = document.querySelector('.error');
-  if (input.value === '') {
-    span.classList.add('error');
-    span.textContent = 'Please enter a valid URL';
-    
-  } else if (input.value !== '') {
-    span.classList.remove('error');
+  const inputEle = document.querySelector('.input');
+  const span = document.createElement('span');
+  span.classList.add('error');
+  span.textContent = 'Please enter a valid URL';
+  if (inputEle.value === '') {
+    inputEle.classList.add('error');
+    inputEle.parentElement.append(span);
+  } else {
+    inputEle.classList.remove('error');
+    span.remove();
   }
 }
 
