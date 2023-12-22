@@ -771,6 +771,7 @@ hr {
 
   .display {
     width: 1110px;
+    /* width: 100%; */
     height: auto;
     margin: 0.5rem auto;
   }
@@ -780,7 +781,7 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1110px;
+    width: 100%;
     margin: 1rem auto;
     border-radius: 5px;
     padding: 0.5rem;
@@ -799,6 +800,12 @@ hr {
     letter-spacing: -0.9px;
     margin-left: 1rem;
     color: #000;
+  }
+
+  .display-data .shortened-url {
+    display: flex;
+    justify-self: flex-start;
+    margin-left: 10rem;
   }
 
   .sub-cont {
