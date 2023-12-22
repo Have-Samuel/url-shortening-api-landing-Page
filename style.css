@@ -342,7 +342,7 @@ hr {
 .vl {
   position: absolute;
   top: 2.5rem;
-  left: 9.9rem;
+  left: 10rem;
   border-left: 6px solid #2bd0d0;
   height: 917px;
   z-index: -1;
