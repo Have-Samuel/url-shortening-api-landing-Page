@@ -53,15 +53,14 @@ function displayData(data) {
 
 // If the form has no input, display an error message
 function formError() {
-  const div = document.createElement('div');
-  div.classList.add('error');
-  div.innerHTML = `
-  <p>Please enter a valid URL</p>
-  `;
-  display.append(div);
-  setTimeout(() => {
-    div.remove();
-  }, 2000);
+  const span = document.querySelector('.error');
+  if (input.value === '') {
+    span.classList.add('error');
+    span.textContent = 'Please enter a valid URL';
+    
+  } else if (input.value !== '') {
+    span.classList.remove('error');
+  }
 }
 
 form.addEventListener('submit', (e) => {
