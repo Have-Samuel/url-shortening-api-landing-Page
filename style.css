@@ -772,11 +772,7 @@ hr {
   .display {
     width: 1110px;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
   }
 
   .display-data {
@@ -787,12 +783,22 @@ hr {
     width: 1110px;
     margin: 1rem auto;
     border-radius: 5px;
-    background-color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   hr {
     display: none;
+  }
+
+  .lining {
+    display: none;
+  }
+
+  .wording {
+    font-size: 1rem;
+    letter-spacing: -0.9px;
+    margin-left: 1rem;
+    color: #000;
   }
 
   .sub-cont {
