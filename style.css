@@ -224,7 +224,7 @@ body {
 }
 
 .mo-form .btn-1 {
-  width: 279px;
+  width: 300px;
   height: 48px;
   background: #2acfcf;
   border-radius: 5px;
@@ -244,6 +244,20 @@ body {
   background: #fff;
   color: #2acfcf;
   border: 1px solid #2acfcf;
+}
+
+.error {
+  color: #f46262;
+  font-size: 0.8rem;
+  font-family: 'poppins', sans-serif;
+  margin-left: 1rem;
+}
+
+.error-text {
+  color: #f46262;
+  font-size: 0.8rem;
+  font-family: 'poppins', sans-serif;
+  margin-left: 1rem;
 }
 
 .display {
@@ -771,7 +785,6 @@ hr {
 
   .display {
     width: 1110px;
-    /* width: 100%; */
     height: auto;
     margin: 0.5rem auto;
   }
