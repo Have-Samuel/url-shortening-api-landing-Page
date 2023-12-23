@@ -63,9 +63,7 @@ function validate() {
   const inputValue = input.value.trim();
   if (inputValue === '') {
     formError(input, 'Please add a link');
-  } else {
-    displayData(inputValue);
-  }
+  } 
 }
 
 form.addEventListener('submit', (e) => {
