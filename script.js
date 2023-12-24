@@ -59,11 +59,12 @@ function formError(ele) {
   formError.classList.add('error');
 }
 // Validate the form
-function validate(url) {
+function validate(data) {
   const inputValue = input.value.trim();
   if (inputValue === '') {
     formError(input, 'Please add a link');
-}
+    displayData(data.result_url);
+  }
 }
 
 form.addEventListener('submit', (e) => {
