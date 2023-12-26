@@ -34,7 +34,6 @@ async function postData(url) {
 function displayData(data) {
   const div = document.createElement('div');
   div.classList.add('display-data');
-  // Show the input url and the shortened url to the DOM
   div.innerHTML = `
 <p class="wording">${data}</p>
 <hr>
