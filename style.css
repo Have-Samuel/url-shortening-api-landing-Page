@@ -259,7 +259,7 @@ body {
 
 .form__field small {
   visibility: hidden;
-  color: red;
+  color: #ff0303;
   font-size: 0.8rem;
   font-style: italic;
   font-weight: 400;
@@ -271,7 +271,6 @@ body {
 }
 
 .error {
-  color: #f46262;
   font-size: 0.8rem;
   margin-left: 1rem;
 }
