@@ -186,8 +186,6 @@ body {
   border: 1px solid #2acfcf;
 }
 
-
-
 .side-img {
   background: url('./images/bg-shorten-mobile.svg'), #4b3f6b;
   background-repeat: no-repeat;
@@ -263,7 +261,7 @@ body {
   font-size: 0.7rem;
   font-weight: 400;
   line-height: 17px;
-  
+  font-family: ;
 }
 
 .form__field.error small {
