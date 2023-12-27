@@ -259,11 +259,11 @@ body {
 
 .form__field small {
   visibility: hidden;
-  color: #ff0303;
-  font-size: 0.8rem;
-  font-style: italic;
+  color: #fff;
+  font-size: 0.7rem;
   font-weight: 400;
   line-height: 17px;
+  
 }
 
 .form__field.error small {
