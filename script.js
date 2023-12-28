@@ -50,13 +50,13 @@ function displayData(data) {
   input.value = '';
 }
 // If the form has no input, display an error message
-function formError(ele) {
-  const formError = ele.parentElement;
-  const small = formError.querySelector('small');
-  small.innerHTML = 'Please add a link';
+// function formError(ele) {
+//   const formError = ele.parentElement;
+//   const small = formError.querySelector('small');
+//   small.innerHTML = 'Please add a link';
 
-  formError.classList.add('error');
-}
+//   formError.classList.add('error');
+// }
 // Validate the form
 function validate(data) {
   const inputValue = input.value.trim();
