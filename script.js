@@ -60,11 +60,10 @@ function formError(ele) {
 // Validate the form
 function validate(data) {
   const inputValue = input.value.trim();
+  let validator = true;
   if (inputValue === '') {
     formError(input, 'Please add a link');
     displayData(data.result_url);
-  } else if (!(inputValue)) {
-    formError(input, 'invalid!');
   }
 }
 
