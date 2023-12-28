@@ -61,10 +61,17 @@ function displayData(data) {
 function validate(data) {
   const inputValue = input.value.trim();
   let validator = true;
+  let isInvalid;
+  const parent = input.parentElement;
   if (inputValue === '') {
-    formError(input, 'Please add a link');
-    displayData(data.result_url);
+    parent.querySelector('small').innerText = 'Please add a Link!';
+    validator = false;
+  } else if (inputValue === isInvalid) {
+    parent.querySelector('small').innerText = 'Url is Invalid!';
   }
+  //   formError(input, 'Please add a link');
+  displayData(data.result_url);
+  // }
 }
 
 form.addEventListener('submit', (e) => {
