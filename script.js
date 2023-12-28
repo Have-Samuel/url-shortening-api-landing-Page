@@ -63,6 +63,8 @@ function validate(data) {
   if (inputValue === '') {
     formError(input, 'Please add a link');
     displayData(data.result_url);
+  } else if (!(inputValue)) {
+    formError(input, 'invalid!');
   }
 }
 
