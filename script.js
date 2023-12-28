@@ -68,6 +68,7 @@ function validate(data) {
     validator = false;
   } else if (inputValue === isInvalid) {
     parent.querySelector('small').innerText = 'Url is Invalid!';
+    validator = false;
   }
   //   formError(input, 'Please add a link');
   displayData(data.result_url);
