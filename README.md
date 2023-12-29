@@ -8,7 +8,6 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
 - [Links](#links)
-- [My process](#my-process)
 - [Built with](#built-with)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
