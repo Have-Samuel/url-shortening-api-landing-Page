@@ -50,25 +50,19 @@ function displayData(data) {
   input.value = '';
 }
 // If the form has no input, display an error message
-// function formError(ele) {
-//   const formError = ele.parentElement;
-//   const small = formError.querySelector('small');
-//   small.innerHTML = 'Please add a link';
+function formError(ele) {
+  const formError = ele.parentElement;
+  const small = formError.querySelector('small');
+  small.innerHTML = 'Please add a link';
 
-//   formError.classList.add('error');
-// }
+  formError.classList.add('error');
+}
 // Validate the form
 function validate(data) {
   const inputValue = input.value.trim();
-  let validator = true;
-  let isInvalid;
   const parent = input.parentElement;
   if (inputValue === '') {
     parent.querySelector('small').innerText = 'Please add a Link!';
-    validator = false;
-  } else if (inputValue === isInvalid) {
-    parent.querySelector('small').innerText = 'Url is Invalid!';
-    validator = false;
   }
   //   formError(input, 'Please add a link');
   displayData(data.result_url);
