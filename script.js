@@ -59,12 +59,11 @@ function formError(ele) {
 }
 // Validate the form
 function validate(data) {
-  let isInvalid;
   const inputValue = input.value.trim();
   const parent = input.parentElement;
   if (inputValue === '') {
     parent.querySelector('small').innerText = 'Please add a Link!';
-  } else (inputValue === isInvalid);
+  }
   displayData(data.result_url);
 }
 
