@@ -58,7 +58,7 @@ function formError(ele) {
   formError.classList.add('error');
 }
 // Validate the form
-function validate(data) {
+function validate() {
   const inputValue = input.value.trim();
   const parent = input.parentElement;
   if (inputValue === '') {
