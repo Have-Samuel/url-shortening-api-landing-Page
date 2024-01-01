@@ -64,7 +64,7 @@ function validate(data) {
   if (inputValue === '') {
     parent.querySelector('small').innerText = 'Please add a Link!';
   }
-  displayData(data.result_url);
+  // displayData(data.result_url);
 }
 
 form.addEventListener('submit', (e) => {
