@@ -13,7 +13,7 @@ const display = document.querySelector('.display');
 
 // Posting Data to the API
 async function postData(url) {
-  console.log(url);
+  // console.log(url);
   try {
     const res = await fetch('https://cleanuri.com/api/v1/shorten', {
       method: 'POST',
@@ -24,7 +24,7 @@ async function postData(url) {
     });
 
     const data = await res.json();
-    // console.log(data.result_url);
+    console.log(data.result_url);
   } catch (err) {
   // console.log(err);
   }
