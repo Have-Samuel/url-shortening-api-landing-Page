@@ -24,7 +24,7 @@ async function postData(url) {
     });
 
     const data = await res.json();
-    console.log(data.result_url);
+    // console.log(data.result_url);
   } catch (err) {
   // console.log(err);
   }
