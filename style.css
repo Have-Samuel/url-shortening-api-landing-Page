@@ -307,7 +307,6 @@ body {
   margin: 0.3rem 2rem;
   letter-spacing: -0.5px;
   line-height: 1.5;
-  padding: auto  0.5rem;
 }
 
 .long-url .wording {
@@ -322,6 +321,7 @@ hr {
   width: 100%;
   border: 1px solid #a5a3a3;
   opacity: 0.3;
+  margin: 0.2rem 0;
 }
 
 .shortened-url {
