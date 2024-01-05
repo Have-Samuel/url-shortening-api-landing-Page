@@ -12,11 +12,55 @@ const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
 // Displaying the Data to the DOM
-function displayData(data, shortUrl) {
+// function displayData(data, shortUrl) {
+//   const div = document.createElement('div');
+//   div.classList.add('display-data');
+//   div.innerHTML = `
+// <p class="wording">${shortUrl}</p>
+// <hr>
+// <p class="shortened-url">${data.result_url}</p>
+// <button class="btn-Url">Copy</button>
+// `;
+
+//   display.append(div);
+//   // Copy to Clipboard
+//   const copy = document.querySelector('.btn-Url');
+//   copy.addEventListener('click', () => {
+//     navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+//   });
+//   input.value = '';
+// }
+
+// Posting Data to the API
+async function postData(url) {
+  console.log(url);
+  try {
+    const res = await fetch('https://cleanuri.com/api/v1/shorten', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `url=${url}`,
+
+    });
+
+    const data = await res.json();
+    console.log(data.result_url);
+    console.log(data);
+    console.log(url);
+    displayData(data);
+  } catch (err) {
+  console.log(err);
+  }
+}
+
+function displayData(data, url) {
   const div = document.createElement('div');
   div.classList.add('display-data');
+  console.log(url);
+  console.log(data);
   div.innerHTML = `
-<p class="wording">${shortUrl}</p>
+<p class="wording">${url}</p>
 <hr>
 <p class="shortened-url">${data.result_url}</p>
 <button class="btn-Url">Copy</button>
@@ -29,26 +73,6 @@ function displayData(data, shortUrl) {
     navigator.clipboard.writeText(copy.previousElementSibling.textContent);
   });
   input.value = '';
-}
-
-// Posting Data to the API
-async function postData(url) {
-  console.log(url);
-  try {
-    const res = await fetch('https://cleanuri.com/api/v1/shorten', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: `url=${url}`,
-    });
-
-    const data = await res.json();
-    console.log(data.result_url);
-    displayData(data);
-  } catch (err) {
-  console.log(err);
-  }
 }
 
 // If the form has no input, display an error message
