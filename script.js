@@ -11,6 +11,26 @@ const form = document.querySelector('#form-js');
 const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
+// Displaying the Data to the DOM
+function displayData(data, shortUrl) {
+  const div = document.createElement('div');
+  div.classList.add('display-data');
+  div.innerHTML = `
+<p class="wording">${shortUrl}</p>
+<hr>
+<p class="shortened-url">${data.result_url}</p>
+<button class="btn-Url">Copy</button>
+`;
+
+  display.append(div);
+  // Copy to Clipboard
+  const copy = document.querySelector('.btn-Url');
+  copy.addEventListener('click', () => {
+    navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+  });
+  input.value = '';
+}
+
 // Posting Data to the API
 async function postData(url) {
   console.log(url);
@@ -25,30 +45,12 @@ async function postData(url) {
 
     const data = await res.json();
     console.log(data.result_url);
+    displayData(data);
   } catch (err) {
   console.log(err);
   }
 }
 
-// Displaying the Data to the DOM
-function displayData(data) {
-  const div = document.createElement('div');
-  div.classList.add('display-data');
-  div.innerHTML = `
-<p class="wording">${data}</p>
-<hr>
-<p class="shortened-url">${data.result_url}</p>
-<button class="btn-Url">Copy</button>
-`;
-
-  display.append(div);
-  // Copy to Clipboard
-  const copy = document.querySelector('.btn-Url');
-  copy.addEventListener('click', () => {
-    navigator.clipboard.writeText(copy.previousElementSibling.textContent);
-  });
-  input.value = '';
-}
 // If the form has no input, display an error message
 function formError(ele) {
   const formError = ele.parentElement;
@@ -68,7 +70,7 @@ form.addEventListener('submit', (e) => {
   console.log(url);
 
   postData(url);
-  displayData(url);
+  // displayData(url);
   validate();
   formError();
 });
