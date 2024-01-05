@@ -57,13 +57,13 @@ function displayData(data, url) {
   });
   input.value = '';
   // When copy buttons is clicked, change the text to copied
-  copy.forEach((copy) => copy.addEventListener('click', () => {
+  // copy.forEach((copy) => copy.addEventListener('click', () => {
   copy.addEventListener('click', () => {
     copy.textContent = 'Copied';
     copy.style.backgroundColor = '#3a3054';
     copy.style.color = '#fff';
   });
-}))
+// }))
 }
 
 // If the form has no input, display an error message
