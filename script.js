@@ -13,7 +13,7 @@ const display = document.querySelector('.display');
 
 // Posting Data to the API
 async function postData(url) {
-  // console.log(url);
+  console.log(url);
   try {
     const res = await fetch('https://cleanuri.com/api/v1/shorten', {
       method: 'POST',
@@ -26,7 +26,7 @@ async function postData(url) {
     const data = await res.json();
     console.log(data.result_url);
   } catch (err) {
-  // console.log(err);
+  console.log(err);
   }
 }
 
@@ -59,18 +59,13 @@ function formError(ele) {
 }
 // Validate the form
 function validate() {
-  const inputValue = input.value.trim();
-  const parent = input.parentElement;
-  if (inputValue === '') {
-    parent.querySelector('small').innerText = 'Please add a Link!';
-  }
   // displayData(data.result_url);
 }
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
-  // console.log(url);
+  console.log(url);
 
   postData(url);
   displayData(url);
