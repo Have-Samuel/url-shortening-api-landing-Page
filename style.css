@@ -298,15 +298,15 @@ body {
   font-size: 0.8rem;
   color: #9e9aa8;
   font-family: 'poppins', sans-serif;
-  letter-spacing: -0.9px;
-  margin: -0.1rem;
+  /* letter-spacing: -0.9px; */
+  /* margin: -0.1rem; */
 }
 
 hr {
   width: 100%;
   border: 1px solid #a5a3a3;
   opacity: 0.3;
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .lining {
