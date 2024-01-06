@@ -314,8 +314,11 @@ body {
   color: #9e9aa8;
   font-family: 'poppins', sans-serif;
   text-align: center;
-  min-width: 100%;
-  margin-right: 0.5rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0.3rem 1rem;
 }
 
 hr {
