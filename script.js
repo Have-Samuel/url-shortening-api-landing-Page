@@ -31,14 +31,14 @@ async function postData(url) {
   console.log(err);
   }
 }
-// <p class="wording">${url.slice(0, url - 1) + "..."}</p>
+
 // Displaying the Data to the DOM
 function displayData(data, url) {
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
   <div class="long-url">
-<p class="wording">${data.length > url ? data.slice((0, url - 1) ) + ".." : data }</p>
+  <p class="wording">${url}</p>
   </div>
 <hr>
 <p class="shortened-url">${data.result_url}</p>
