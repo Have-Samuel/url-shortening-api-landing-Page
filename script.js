@@ -31,14 +31,14 @@ async function postData(url) {
   console.log(err);
   }
 }
-
+// <p class="wording">${url.slice(0, url - 1) + "..."}</p>
 // Displaying the Data to the DOM
 function displayData(data, url) {
   const div = document.createElement('div');
   div.classList.add('display-data');
   div.innerHTML = `
   <div class="long-url">
-<p class="wording">${url}</p>
+<p class="wording">${data.length > url ? data.slice((0, url - 1) ) + ".." : data }</p>
   </div>
 <hr>
 <p class="shortened-url">${data.result_url}</p>
@@ -61,13 +61,13 @@ function displayData(data, url) {
 }
 
 // If the form has no input, display an error message
-function formError(ele) {
-  const formError = ele.parentElement;
-  const small = formError.querySelector('small');
-  small.innerHTML = 'Please add a link';
+// function formError(ele) {
+//   const formError = ele.parentElement;
+//   const small = formError.querySelector('small');
+//   small.innerHTML = 'Please add a link';
 
-  formError.classList.add('error');
-}
+//   formError.classList.add('error');
+// }
 // Validate the form
 function validate() {
   // displayData(data.result_url);
