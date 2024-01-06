@@ -292,7 +292,7 @@ body {
   margin: 1rem auto;
   border-radius: 5px;
   background-color: #fff;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
 }
 
 .long-url {
@@ -304,7 +304,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 0.3rem 2rem;
+  margin: 0 2rem 0.3rem 2rem;
   letter-spacing: -0.5px;
   line-height: 1.5;
 }
@@ -318,7 +318,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 0.3rem 1rem;
+  margin: 0.1rem 1rem;
 }
 
 hr {
@@ -330,10 +330,9 @@ hr {
 
 .shortened-url {
   text-align: left;
-  color: #2BD0D0;
+  color: #2bd0d0;
   margin: 0.3rem 0;
   text-decoration: none;
-
 }
 
 .lining {
@@ -345,7 +344,7 @@ hr {
 .btn-Url {
   width: 295px;
   padding: 0.5rem 1rem;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   color: #fff;
   font-size: 1rem;
   text-align: center;
@@ -360,6 +359,10 @@ hr {
 .btn-Url:hover {
   opacity: 0.5;
   color: #7c7676;
+}
+
+.copied {
+  color: #34313d;
 }
 
 .sub-cont {

@@ -47,18 +47,41 @@ function displayData(data, url) {
 
   display.append(div);
   // Copy to Clipboard
-  const copy = document.querySelector('.btn-Url');
-  copy.addEventListener('click', () => {
-    navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+  
+  // const copy = document.querySelector('.btn-Url');
+  // Capture all copy buttons
+  const copy = document.querySelectorAll('.btn-Url');
+  console.log(copy);
+  // Loop through the copy buttons
+  copy.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      btn.textContent = 'Copied';
+      btn.style.backgroundColor = '#3a3054';
+      navigator.clipboard.writeText(btn.previousElementSibling.textContent);
+    });
   });
+  
   input.value = '';
-  // When copy buttons is clicked, change the text to copied
-  copy.addEventListener('click', () => {
-    copy.textContent = 'Copied';
-    copy.style.backgroundColor = '#3a3054';
-    copy.style.color = '#fff';
-  });
+  
+  // When all copy buttons are clicked, change the text to copied
+  // copy.forEach((btn) => {
+  //   btn.addEventListener('click', () => {
+  //     btn.textContent = 'Copied';
+  //     btn.style.backgroundColor = '#3a3054';
+  //   });
+  // });
+
+  // copy.addEventListener('click', () => {
+  //   navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+  // });
+  
 }
+
+// When copy buttons is clicked, change the text to copied
+  // copy.addEventListener('click', () => {
+  //   copy.textContent = 'Copied';
+  //   copy.style.backgroundColor = '#3a3054';
+  // });
 
 // If the form has no input, display an error message
 // function formError(ele) {
@@ -79,5 +102,5 @@ form.addEventListener('submit', (e) => {
   console.log(url);
   postData(url);
   validate();
-  formError();
+  // formError();
 });
