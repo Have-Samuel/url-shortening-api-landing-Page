@@ -26,8 +26,6 @@ async function postData(url) {
 
     const data = await res.json();
     console.log(data.result_url);
-    // console.log(data);
-    // console.log(url);
     displayData(data, url);
   } catch (err) {
   console.log(err);
