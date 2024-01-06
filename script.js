@@ -56,7 +56,6 @@ function displayData(data, url) {
   copy.addEventListener('click', () => {
     copy.textContent = 'Copied';
     copy.style.backgroundColor = '#3a3054';
-    copy.style.color = '#fff';
   });
 }
 
