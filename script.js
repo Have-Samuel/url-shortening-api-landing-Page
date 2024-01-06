@@ -48,16 +48,29 @@ function displayData(data, url) {
   display.append(div);
   // Copy to Clipboard
   const copy = document.querySelector('.btn-Url');
-  copy.addEventListener('click', () => {
-    navigator.clipboard.writeText(copy.previousElementSibling.textContent);
-  });
+  copy
+  
   input.value = '';
-  // When copy buttons is clicked, change the text to copied
-  copy.addEventListener('click', () => {
-    copy.textContent = 'Copied';
-    copy.style.backgroundColor = '#3a3054';
-  });
+  
+  // When all copy buttons are clicked, change the text to copied
+  // copy.forEach((btn) => {
+  //   btn.addEventListener('click', () => {
+  //     btn.textContent = 'Copied';
+  //     btn.style.backgroundColor = '#3a3054';
+  //   });
+  // });
+
+  // copy.addEventListener('click', () => {
+  //   navigator.clipboard.writeText(copy.previousElementSibling.textContent);
+  // });
+  
 }
+
+// When copy buttons is clicked, change the text to copied
+  // copy.addEventListener('click', () => {
+  //   copy.textContent = 'Copied';
+  //   copy.style.backgroundColor = '#3a3054';
+  // });
 
 // If the form has no input, display an error message
 // function formError(ele) {
@@ -78,5 +91,5 @@ form.addEventListener('submit', (e) => {
   console.log(url);
   postData(url);
   validate();
-  formError();
+  // formError();
 });
