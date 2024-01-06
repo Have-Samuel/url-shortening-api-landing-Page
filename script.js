@@ -36,8 +36,6 @@ async function postData(url) {
 function displayData(data, url) {
   const div = document.createElement('div');
   div.classList.add('display-data');
-  // console.log(url);
-  // console.log(data);
   div.innerHTML = `
   <div class="long-url">
 <p class="wording">${url}</p>
@@ -55,13 +53,11 @@ function displayData(data, url) {
   });
   input.value = '';
   // When copy buttons is clicked, change the text to copied
-  // copy.forEach((copy) => copy.addEventListener('click', () => {
   copy.addEventListener('click', () => {
     copy.textContent = 'Copied';
     copy.style.backgroundColor = '#3a3054';
     copy.style.color = '#fff';
   });
-// }))
 }
 
 // If the form has no input, display an error message
