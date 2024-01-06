@@ -47,8 +47,19 @@ function displayData(data, url) {
 
   display.append(div);
   // Copy to Clipboard
-  const copy = document.querySelector('.btn-Url');
-  copy
+  
+  // const copy = document.querySelector('.btn-Url');
+  // Capture all copy buttons
+  const copy = document.querySelectorAll('.btn-Url');
+  console.log(copy);
+  // Loop through the copy buttons
+  copy.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      btn.textContent = 'Copied';
+      btn.style.backgroundColor = '#3a3054';
+      navigator.clipboard.writeText(btn.previousElementSibling.textContent);
+    });
+  });
   
   input.value = '';
   
