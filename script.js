@@ -47,10 +47,9 @@ function displayData(data, url) {
 
   display.append(div);
   // Copy to Clipboard
-  // Capture all copy buttons
+  // Capture all copy buttons and Loop through the copy buttons
   const copy = document.querySelectorAll('.btn-Url');
   console.log(copy);
-  // Loop through the copy buttons
   copy.forEach((btn) => {
     btn.addEventListener('click', () => {
       btn.textContent = 'Copied';
@@ -58,9 +57,7 @@ function displayData(data, url) {
       navigator.clipboard.writeText(btn.previousElementSibling.textContent);
     });
   });
-  
   input.value = '';
-    
 }
 
 // Validate the form
