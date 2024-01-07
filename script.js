@@ -47,8 +47,6 @@ function displayData(data, url) {
 
   display.append(div);
   // Copy to Clipboard
-  
-  // const copy = document.querySelector('.btn-Url');
   // Capture all copy buttons
   const copy = document.querySelectorAll('.btn-Url');
   console.log(copy);
@@ -62,35 +60,9 @@ function displayData(data, url) {
   });
   
   input.value = '';
-  
-  // When all copy buttons are clicked, change the text to copied
-  // copy.forEach((btn) => {
-  //   btn.addEventListener('click', () => {
-  //     btn.textContent = 'Copied';
-  //     btn.style.backgroundColor = '#3a3054';
-  //   });
-  // });
-
-  // copy.addEventListener('click', () => {
-  //   navigator.clipboard.writeText(copy.previousElementSibling.textContent);
-  // });
-  
+    
 }
 
-// When copy buttons is clicked, change the text to copied
-  // copy.addEventListener('click', () => {
-  //   copy.textContent = 'Copied';
-  //   copy.style.backgroundColor = '#3a3054';
-  // });
-
-// If the form has no input, display an error message
-// function formError(ele) {
-//   const formError = ele.parentElement;
-//   const small = formError.querySelector('small');
-//   small.innerHTML = 'Please add a link';
-
-//   formError.classList.add('error');
-// }
 // Validate the form
 function validate() {
   // displayData(data.result_url);
