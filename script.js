@@ -52,7 +52,7 @@ function displayData(data, url) {
   console.log(copy);
   copy.forEach((btn) => {
     btn.addEventListener('click', () => {
-      btn.textContent = 'Copied';
+      btn.textContent = 'Copied!';
       btn.style.backgroundColor = '#3a3054';
       navigator.clipboard.writeText(btn.previousElementSibling.textContent);
     });
