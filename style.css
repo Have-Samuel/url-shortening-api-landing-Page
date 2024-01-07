@@ -787,10 +787,11 @@ hr {
     top: 10rem;
     right: -11rem;
     margin-right: 11rem;
+    overflow-x: hidden;
   }
 
   .mo-form {
-    width: 1110px;
+    width: 80%;
     height: 169px;
     border-radius: 10px;
     background-color: #5a4f77;
@@ -800,8 +801,19 @@ hr {
     align-items: center;
   }
 
+  .form__field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* position: relative; */
+    width: 100%;
+    /* height: 64px; */
+  }
+
   .mo-form .input {
-    width: 70%;
+    width: 100%;
     height: 64px;
     background: #fff;
     border-radius: 5px;
