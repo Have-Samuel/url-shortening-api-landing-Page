@@ -799,17 +799,14 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 0;
   }
 
   .form__field {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 0.9rem;
-    /* position: relative; */
-    width: 100%;
-    /* height: 64px; */
+    width: 75%;
+    /* margin: 0 auto; */
   }
 
   .mo-form .input {
@@ -818,18 +815,18 @@ hr {
     background: #fff;
     border-radius: 5px;
     display: flex;
-    margin: 0 0.5rem 0 0.5rem;
+    /* margin: 0 0.5rem 0 0.5rem; */
     font-size: 1.2rem;
     color: #bfbfbf;
     cursor: pointer;
     outline: none;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
   }
 
   .mo-form .btn-1 {
     width: 188px;
     height: 64px;
-    margin: 0;
+    /* margin: 0; */
   }
 
   .display {
