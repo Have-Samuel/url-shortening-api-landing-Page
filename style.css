@@ -795,7 +795,7 @@ hr {
     height: 169px;
     border-radius: 10px;
     background-color: #5a4f77;
-    margin: 8rem auto;
+    margin: 8rem auto 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
