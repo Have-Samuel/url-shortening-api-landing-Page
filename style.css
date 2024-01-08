@@ -869,7 +869,7 @@ hr {
   .display-data .shortened-url {
     display: flex;
     justify-self: flex-start;
-    margin-left: 10rem;
+    margin-right: 3rem;
   }
 
   .btn-Url {
