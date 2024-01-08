@@ -813,12 +813,10 @@ hr {
     background: #fff;
     border-radius: 5px;
     display: flex;
-    /* margin: 0 0.5rem 0 0.5rem; */
     font-size: 1.2rem;
     color: #bfbfbf;
     cursor: pointer;
     outline: none;
-    /* padding-left: 1.5rem; */
   }
 
   .mo-form .btn-1 {
