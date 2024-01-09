@@ -1058,8 +1058,8 @@ hr {
     color: #2bd0d0;
   }
 
-  .media-changer {
-    color: red;
+  .media-group li a .media-changer {
+    color: #ff0000;
     
   }
 }
