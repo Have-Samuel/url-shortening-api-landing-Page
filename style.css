@@ -1057,4 +1057,9 @@ hr {
   .media-group:hover {
     color: #2bd0d0;
   }
+
+  .media-changer {
+    color: red;
+    
+  }
 }
