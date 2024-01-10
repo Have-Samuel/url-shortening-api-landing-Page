@@ -624,12 +624,21 @@ hr {
   background-color: yellow;
 }
 
-.media-group {
+.media .media-group {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem auto;
   gap: 1.5rem;
+  list-style: none;
+}
+
+.media-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  /* gap: 1.5rem; */
   list-style: none;
 }
 
@@ -1031,6 +1040,7 @@ hr {
 
   .all {
     display: flex;
+    justify-content: space-between;
     width: 1250px;
     margin: 2rem auto 0 auto;
   }
