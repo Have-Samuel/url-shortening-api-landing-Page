@@ -616,6 +616,13 @@ hr {
   cursor: pointer;
 }
 
+.media {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .media-group {
   display: flex;
   justify-content: center;
@@ -1050,13 +1057,13 @@ hr {
     text-align: left;
   }
 
-  .media-group {
+  /* .media-group {
     margin-top: 2rem;
   }
 
   .media-group:hover {
     color: #2bd0d0;
-  }
+  } */
 
   .changer-1:hover {
     fill: #7e0202;
