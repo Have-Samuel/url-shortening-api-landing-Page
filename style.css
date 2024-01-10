@@ -1058,7 +1058,11 @@ hr {
     color: #2bd0d0;
   }
 
-  .media-group li a img {
-    color: #ff0000;
+  .changer-1 {
+    fill: #7e0202;
+  }
+
+  .media-changer {
+    fill: #7e0202;
   }
 }
