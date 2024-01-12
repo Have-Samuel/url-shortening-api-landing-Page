@@ -61,9 +61,19 @@ function displayData(data, url) {
 }
 
 // Validate the form
-function validate() {
-  // displayData(data.result_url);
-}
+// function validate() {
+//   if (input.value === '') {
+//     input.classList.add('error');
+//     input.placeholder = 'Please add a link';
+//   } else {
+//     input.classList.remove('error');
+//     input.placeholder = 'Shorten a link here...';
+//   }
+//   input.addEventListener('input', () => {
+//     input.classList.remove('error');
+//     input.placeholder = 'Shorten a link here...';
+//   })
+// }
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -71,5 +81,4 @@ form.addEventListener('submit', (e) => {
   console.log(url);
   postData(url);
   validate();
-  // formError();
 });
