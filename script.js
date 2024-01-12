@@ -61,8 +61,20 @@ function displayData(data, url) {
 }
 
 // Validate the form
+function errorText(ele, mes) {
+  const formControl = ele.parentElement;
+  const small = formControl.querySelector('small');
+  small.innerText = mes;
+  formControl.classList.add('error');
+}
+
 function validate() {
-  // displayData(data.result_url);
+  const fullNameValue = fullName.value.trim();
+
+  function validateUrl(url) {
+    const regex = /^(ftp|http|https):\/\/[^ "]+$/;
+    return regex.test(url);
+  }
 }
 
 form.addEventListener('submit', (e) => {
@@ -71,5 +83,4 @@ form.addEventListener('submit', (e) => {
   console.log(url);
   postData(url);
   validate();
-  // formError();
 });
