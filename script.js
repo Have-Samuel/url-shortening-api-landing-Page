@@ -71,9 +71,10 @@ function errorText(ele, mes) {
 function validate() {
   const fullNameValue = fullName.value.trim();
 
-  function validateUrl(url) {
-    const regex = /^(ftp|http|https):\/\/[^ "]+$/;
-    return regex.test(url);
+  if (fullNameValue === '') {
+    errorText(fullName, 'Full Name cannot be empty');
+  } else {
+    errorText(fullName, '');
   }
 }
 
