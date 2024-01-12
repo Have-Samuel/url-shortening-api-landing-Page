@@ -61,22 +61,19 @@ function displayData(data, url) {
 }
 
 // Validate the form
-function errorText(ele, mes) {
-  const formControl = ele.parentElement;
-  const small = formControl.querySelector('small');
-  small.innerText = mes;
-  formControl.classList.add('error');
-}
-
-function validate() {
-  const fullNameValue = fullName.value.trim();
-
-  if (fullNameValue === '') {
-    errorText(fullName, 'Full Name cannot be empty');
-  } else {
-    errorText(fullName, '');
-  }
-}
+// function validate() {
+//   if (input.value === '') {
+//     input.classList.add('error');
+//     input.placeholder = 'Please add a link';
+//   } else {
+//     input.classList.remove('error');
+//     input.placeholder = 'Shorten a link here...';
+//   }
+//   input.addEventListener('input', () => {
+//     input.classList.remove('error');
+//     input.placeholder = 'Shorten a link here...';
+//   })
+// }
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
