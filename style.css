@@ -627,13 +627,13 @@ hr {
   /* gap: 1.5rem; */
 }
 
-/* .media .media-group {
+.media-group {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
   list-style: none;
-} */
+}
 
 .media .changer-1:hover {
   fill: #7e0202;
