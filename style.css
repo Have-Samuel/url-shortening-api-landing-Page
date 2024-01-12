@@ -17,7 +17,7 @@ body {
   margin: 0 auto;
   width: 375px;
   background: #fff;
-  height: 927px;
+  height: 788px;
 }
 
 .header {
@@ -570,7 +570,7 @@ hr {
 }
 
 .footer {
-  height: 776px;
+  /* height: 500px; */
   width: 375px;
   background-color: #000;
   text-align: center;
@@ -618,13 +618,13 @@ hr {
 
 .media {
   width: 100%;
-  /* height: 776px; */
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background-color: yellow; */
   margin: 3rem auto;
-  /* gap: 1.5rem; */
+  gap: 1.5rem;
 }
 
 .media-group {
