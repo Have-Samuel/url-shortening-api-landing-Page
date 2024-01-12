@@ -1038,6 +1038,7 @@ hr {
     justify-content: space-between;
     width: 1250px;
     margin: 2rem auto 0 auto;
+    
   }
 
   .footer-head {
@@ -1063,21 +1064,27 @@ hr {
     text-align: left;
   }
 
-  .media {
+  /* .media {
+    margin-left: 1rem;
+    width: 15%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     background-color: rgb(0, 255, 157);
-  }
+  } */
 
-  /* .media-group {
-    margin-top: 2rem;
+  .media-group {
+    margin-right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .media-group:hover {
     color: #2bd0d0;
-  } */
+  }
 
   .changer-1:hover {
     fill: #7e0202;
