@@ -1038,7 +1038,7 @@ hr {
     justify-content: space-between;
     width: 1250px;
     margin: 2rem auto 0 auto;
-    
+    flex-direction: row;
   }
 
   .footer-head {
