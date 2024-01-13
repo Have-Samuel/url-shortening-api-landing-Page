@@ -617,7 +617,6 @@ hr {
 }
 
 .media {
-  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -1064,18 +1063,7 @@ hr {
     text-align: left;
   }
 
-  /* .media {
-    margin-left: 1rem;
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: left;
-    background-color: rgb(0, 255, 157);
-  } */
-
   .media-group {
-    margin-right: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1092,5 +1080,13 @@ hr {
 
   .media-changer {
     fill: #7e0202;
+  }
+
+  .wider  a{
+    width: 123px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
   }
 }
