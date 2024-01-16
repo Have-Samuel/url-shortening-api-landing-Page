@@ -46,8 +46,7 @@ function displayData(data, url) {
 `;
 
   display.append(div);
-  // Copy to Clipboard
-  // Capture all copy buttons and Loop through the copy buttons
+  // Copy to Clipboard & Capture all copy buttons and Loop through the copy buttons
   const copy = document.querySelectorAll('.btn-Url');
   console.log(copy);
   copy.forEach((btn) => {
