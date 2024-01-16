@@ -65,5 +65,4 @@ form.addEventListener('submit', (e) => {
   const url = input.value;
   console.log(url);
   postData(url);
-  // validate();
 });
