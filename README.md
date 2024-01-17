@@ -27,6 +27,10 @@ Users should be able to:
 
 ### Screenshot
 
+## Mobile
+
+![](./screenshot.jpg)
+
 ## Mobile Menu
 
 ![](./screenshot.jpg)
