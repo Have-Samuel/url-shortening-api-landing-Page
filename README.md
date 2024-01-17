@@ -31,7 +31,7 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-## Mobile
+## Mobile Active
 
 ![](./screenshot.jpg)
 
