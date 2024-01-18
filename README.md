@@ -41,7 +41,7 @@ Users should be able to:
 
 ## Desktop
 
-![](./screenshot.jpg)
+![](./)
 
 ## Desktop Active Status
 
