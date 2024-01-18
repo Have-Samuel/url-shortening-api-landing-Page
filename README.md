@@ -33,7 +33,7 @@ Users should be able to:
 
 ## Mobile Menu
 
-![](./screenshot.jpg)
+![](./)
 
 ## Mobile Active
 
