@@ -37,7 +37,7 @@ Users should be able to:
 
 ## Mobile Active
 
-![](./screenshot.jpg)
+![](./)
 
 ## Desktop
 
