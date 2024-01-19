@@ -250,9 +250,17 @@ body {
 
 .form__field {
   position: relative;
-  width: 300px;
+  /* width: 300px;
   height: 48px;
-  margin: 0 auto;
+  margin: 0 auto; */
+}
+
+.form__field input:focus {
+  outline: none;
+}
+
+.form__field.error input {
+  border-color: red;
 }
 
 .form__field small {
@@ -270,10 +278,10 @@ body {
   visibility: visible;
 }
 
-.error {
+/* .error {
   font-size: 0.8rem;
   margin-left: 1rem;
-}
+} */
 
 .display {
   width: 327px;
