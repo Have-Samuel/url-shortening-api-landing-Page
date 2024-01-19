@@ -59,9 +59,30 @@ function displayData(data, url) {
   input.value = '';
 }
 
+// Show an error message if the input field is empty
+function showError(ele, msg) {
+  const formControl = ele.parentElement;
+  const small = formControl.querySelector('small');
+  small.innerText = msg;
+  formControl.className = 'error';
+}
+
+// Validate the input field
+function validate() {
+  const url = input.value.trim();
+  if (url === '') {
+    showError(input, 'Please enter a valid URL');
+  } else {
+    showSuccess(input);
+  }
+}
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
   console.log(url);
   postData(url);
+  if (url === '') {
+    showError();
+  }
 });
