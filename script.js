@@ -59,9 +59,38 @@ function displayData(data, url) {
   input.value = '';
 }
 
+// Show an error message if the input field is empty
+function showError(ele, msg) {
+  const formControl = ele.parentElement;
+  const small = formControl.querySelector('small');
+  small.innerText = msg;
+  formControl.classList.add('error');
+}
+
+// Validate the input field
+function isUrl(url) {
+  if (url.match(/^(ftp|http|https):\/\/[^ "]+$/)) {
+    return true;
+  }
+  return false;
+}
+
+// Remove the error message when the user starts typing
+input.addEventListener('keyup', () => {
+  const formControl = input.parentElement;
+  formControl.classList.remove('error');
+});
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
   console.log(url);
-  postData(url);
+  if (url === '') {
+    showError(input, 'Please add a link');
+  } else if (!isUrl(url)) {
+    showError(input, 'Please provide a valid link');
+  } else {
+    postData(url);
+  }
 });
+

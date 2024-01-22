@@ -206,7 +206,7 @@ body {
   gap: 1rem;
 }
 
-.mo-form .input {
+.form__field .input {
   position: relative;
   width: 300px;
   height: 48px;
@@ -242,7 +242,7 @@ body {
   font-weight: bold;
 }
 
-.mo-form .btn-1:hover {
+.form__field .btn-1:hover {
   background: #fff;
   color: #2acfcf;
   border: 1px solid #2acfcf;
@@ -250,26 +250,32 @@ body {
 
 .form__field {
   position: relative;
-  width: 300px;
+  /* width: 300px;
   height: 48px;
-  margin: 0 auto;
+  margin: 0 auto; */
+}
+
+.form__field input:focus {
+  outline: none;
+}
+
+.form__field.error input {
+  border-color: red;
 }
 
 .form__field small {
   visibility: hidden;
-  color: #fff;
+  color: red;
   font-size: 0.7rem;
   font-weight: 400;
   line-height: 17px;
+  position: absolute;
+  bottom: -17px;
+  right: 150px;
 }
 
 .form__field.error small {
   visibility: visible;
-}
-
-.error {
-  font-size: 0.8rem;
-  margin-left: 1rem;
 }
 
 .display {
