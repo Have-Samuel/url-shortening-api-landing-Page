@@ -68,18 +68,29 @@ function showError(ele, msg) {
 }
 
 // Validate the input field
-function validate() {
-  const url = input.value.trim();
-  if (url === '') {
-    showError(input, 'Please enter a valid URL');
-  } else {
-    showSuccess(input);
+function isUrl(url) {
+  if (url.match(/^(ftp|http|https):\/\/[^ "]+$/)) {
+    return true;
   }
+  return false;
 }
+
+// Remove the error message when the user starts typing
+input.addEventListener('keyup', () => {
+  const formControl = input.parentElement;
+  formControl.classList.remove('error');
+});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
   console.log(url);
-  validate();
+  if (url === '') {
+    showError(input, 'Please add a link');
+  } else if (!isUrl(url)) {
+    showError(input, 'Please provide a valid link');
+  } else {
+    postData(url);
+  }
 });
+
