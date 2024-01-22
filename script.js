@@ -81,8 +81,5 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const url = input.value;
   console.log(url);
-  postData(url);
-  if (url === '') {
-    showError();
-  }
+  validate();
 });
