@@ -64,7 +64,7 @@ function showError(ele, msg) {
   const formControl = ele.parentElement;
   const small = formControl.querySelector('small');
   small.innerText = msg;
-  formControl.className = 'error';
+  formControl.classList.add('error');
 }
 
 // Validate the input field
