@@ -206,7 +206,7 @@ body {
   gap: 1rem;
 }
 
-.mo-form .input {
+.form__field .input {
   position: relative;
   width: 300px;
   height: 48px;
@@ -242,7 +242,7 @@ body {
   font-weight: bold;
 }
 
-.mo-form .btn-1:hover {
+.form__field .btn-1:hover {
   background: #fff;
   color: #2acfcf;
   border: 1px solid #2acfcf;
@@ -270,8 +270,8 @@ body {
   font-weight: 400;
   line-height: 17px;
   position: absolute;
-  bottom: -20px;
-  right: 12px;
+  bottom: -17px;
+  right: 150px;
 }
 
 .form__field.error small {
