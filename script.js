@@ -87,8 +87,15 @@ form.addEventListener('submit', (e) => {
   console.log(url);
   if (!isUrl(url)) {
     showError(input, 'Please provide a valid link');
+    // styling of the input field
+    input.style.border = '1px solid red';
   } else {
     postData(url);
   }
+});
+
+// remove the error border when the user starts typing
+input.addEventListener('keyup', () => {
+  input.style.border = '1px solid #9e9aa7';
 });
 
