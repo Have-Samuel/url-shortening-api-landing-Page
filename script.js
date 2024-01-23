@@ -28,7 +28,7 @@ function displayData(data, url) {
   // Copy to Clipboard & Capture all copy buttons and Loop through the copy buttons
   const copy = document.querySelectorAll('.btn-Url');
   console.log(copy);
-  copy.forEach((btn) => {
+    copy.forEach((btn) => {
     btn.addEventListener('click', () => {
       btn.textContent = 'Copied!';
       btn.style.backgroundColor = '#3a3054';
