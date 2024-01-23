@@ -259,9 +259,9 @@ body {
   outline: none;
 }
 
-.form__field.error input {
+/* .form__field.error input {
   border-color: red;
-}
+} */
 
 .form__field small {
   visibility: hidden;
