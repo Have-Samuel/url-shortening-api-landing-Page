@@ -11,6 +11,33 @@ const form = document.querySelector('#form-js');
 const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
+// Displaying the Data to the DOM
+function displayData(data, url) {
+  const div = document.createElement('div');
+  div.classList.add('display-data');
+  div.innerHTML = `
+  <div class="long-url">
+  <p class="wording">${url}</p>
+  </div>
+<hr>
+<p class="shortened-url">${data.result_url}</p>
+<button class="btn-Url">Copy</button>
+`;
+
+  display.append(div);
+  // Copy to Clipboard & Capture all copy buttons and Loop through the copy buttons
+  const copy = document.querySelectorAll('.btn-Url');
+  console.log(copy);
+    copy.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      btn.textContent = 'Copied!';
+      btn.style.backgroundColor = '#3a3054';
+      navigator.clipboard.writeText(btn.previousElementSibling.textContent);
+    });
+  });
+  input.value = '';
+}
+
 // Posting Data to the API
 async function postData(url) {
   console.log(url);
@@ -30,33 +57,6 @@ async function postData(url) {
   } catch (err) {
   console.log(err);
   }
-}
-
-// Displaying the Data to the DOM
-function displayData(data, url) {
-  const div = document.createElement('div');
-  div.classList.add('display-data');
-  div.innerHTML = `
-  <div class="long-url">
-  <p class="wording">${url}</p>
-  </div>
-<hr>
-<p class="shortened-url">${data.result_url}</p>
-<button class="btn-Url">Copy</button>
-`;
-
-  display.append(div);
-  // Copy to Clipboard & Capture all copy buttons and Loop through the copy buttons
-  const copy = document.querySelectorAll('.btn-Url');
-  console.log(copy);
-  copy.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      btn.textContent = 'Copied!';
-      btn.style.backgroundColor = '#3a3054';
-      navigator.clipboard.writeText(btn.previousElementSibling.textContent);
-    });
-  });
-  input.value = '';
 }
 
 // Show an error message if the input field is empty
