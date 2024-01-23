@@ -11,27 +11,6 @@ const form = document.querySelector('#form-js');
 const input = document.querySelector('.input');
 const display = document.querySelector('.display');
 
-// Posting Data to the API
-async function postData(url) {
-  console.log(url);
-  try {
-    const res = await fetch('https://cleanuri.com/api/v1/shorten', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: `url=${url}`,
-
-    });
-
-    const data = await res.json();
-    console.log(data.result_url);
-    displayData(data, url);
-  } catch (err) {
-  console.log(err);
-  }
-}
-
 // Displaying the Data to the DOM
 function displayData(data, url) {
   const div = document.createElement('div');
@@ -57,6 +36,27 @@ function displayData(data, url) {
     });
   });
   input.value = '';
+}
+
+// Posting Data to the API
+async function postData(url) {
+  console.log(url);
+  try {
+    const res = await fetch('https://cleanuri.com/api/v1/shorten', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `url=${url}`,
+
+    });
+
+    const data = await res.json();
+    console.log(data.result_url);
+    displayData(data, url);
+  } catch (err) {
+  console.log(err);
+  }
 }
 
 // Show an error message if the input field is empty
