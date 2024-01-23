@@ -83,14 +83,12 @@ input.addEventListener('keyup', () => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const urlValue = input.value.trim();
-  console.log(urlValue);
-  if (urlValue === '') {
-    showError(input, 'Please add a link');
-  } else if (!isUrl(urlValue)) {
+  const url = input.value.trim();
+  console.log(url);
+  if (!isUrl(url)) {
     showError(input, 'Please provide a valid link');
   } else {
-    postData(urlValue);
+    postData(url);
   }
 });
 
