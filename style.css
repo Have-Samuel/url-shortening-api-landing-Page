@@ -259,10 +259,6 @@ body {
   outline: none;
 }
 
-/* .form__field.error input {
-  border-color: red;
-} */
-
 .form__field small {
   visibility: hidden;
   color: red;
@@ -816,16 +812,18 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 0;
   }
 
   .form__field {
     display: flex;
     align-items: center;
     width: 75%;
+    gap: 0;
   }
 
-  .mo-form .input {
-    width: 100%;
+  .form__field .input {
+    width: 90%;
     height: 64px;
     background: #fff;
     border-radius: 5px;
@@ -837,9 +835,10 @@ hr {
   }
 
   .mo-form .btn-1 {
-    width: 188px;
+    width: 20%;
     height: 64px;
-    margin-left: -4rem;
+    font-size: 1.2rem;
+    margin-left: 0.9rem;
   }
 
   .display {
