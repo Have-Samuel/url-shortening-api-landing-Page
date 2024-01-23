@@ -250,9 +250,6 @@ body {
 
 .form__field {
   position: relative;
-  /* width: 300px;
-  height: 48px;
-  margin: 0 auto; */
 }
 
 .form__field input:focus {
@@ -822,6 +819,19 @@ hr {
     gap: 0;
   }
 
+  .form__field small {
+    color: red;
+    font-size: 0.9rem;
+    font-style: italic;
+    position: absolute;
+    bottom: -22px;
+    left: 44px;
+  }
+  
+  .form__field.error small {
+    visibility: visible;
+  }
+
   .form__field .input {
     width: 90%;
     height: 64px;
@@ -879,7 +889,7 @@ hr {
     letter-spacing: -0.9px;
     margin-left: 1rem;
     text-align: left;
-    color: #9e9aa8;
+    color: #34313d;
   }
 
   .display-data .shortened-url {
