@@ -50,7 +50,7 @@ Users should be able to:
 ### Links
 
 - [Github](https://github.com/Have-Samuel/url-shortening-api-landing-Page)
-- [Live Link](https://have-samuel.github.io/url-shortening-api-landing-Page/)
+- [Live Link](https://url-shortening-api-landing-page-delta.vercel.app/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/Have-Samuel)
 
 ## My process
