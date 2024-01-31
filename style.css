@@ -127,7 +127,7 @@ body {
   width: 100%;
   height: 300px;
   margin: 0 2rem;
-  background: url('/images/illustration-working.svg');
+  background: url('./images/illustration-working.svg');
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: cover;
@@ -792,6 +792,7 @@ hr {
   .inner-img {
     width: 600px;
     height: 482px;
+    background: url('./images/illustration-working.svg');
     position: absolute;
     background-size: cover;
     top: 10rem;
