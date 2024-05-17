@@ -72,6 +72,8 @@ Users should be able to:
 
 ## Author
 
+**Have Samuel**
+
 - [@Have-Samuel](https://www.frontendmentor.io/profile/Have-Samuel)
 - [@samhave1](https://twitter.com/samhave1)
 - [LinkedIn](https://www.linkedin.com/in/have-samuel/)
