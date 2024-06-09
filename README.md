@@ -51,8 +51,6 @@ Users should be able to:
 
 - [Github](https://github.com/Have-Samuel/url-shortening-api-landing-Page)
 - [Live Link](https://url-shortening-api-landing-page-delta.vercel.app/)
-- [Frontend Mentor](https://www.frontendmentor.io/profile/Have-Samuel)
-- [linkedIn](https://www.linkedin.com/in/have-samuel/)
 
 ## My process
 
@@ -77,6 +75,7 @@ Users should be able to:
 - [@Have-Samuel](https://www.frontendmentor.io/profile/Have-Samuel)
 - [@samhave1](https://twitter.com/samhave1)
 - [LinkedIn](https://www.linkedin.com/in/have-samuel/)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/Have-Samuel)
 
 ## 🤝 Contributions
 
