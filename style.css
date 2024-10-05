@@ -57,7 +57,7 @@ body {
   display: block;
   width: 20px;
   height: 2px;
-  margin: 6px auto;
+  margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #968e8e;
