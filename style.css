@@ -56,8 +56,8 @@ body {
 .bar {
   display: block;
   width: 20px;
-  height: 2px;
-  margin: 5px auto;
+  height: 1px;
+  margin: 7px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #968e8e;
