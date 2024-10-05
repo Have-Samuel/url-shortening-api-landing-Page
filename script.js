@@ -28,7 +28,7 @@ function displayData(data, url) {
   // Copy to Clipboard & Capture all copy buttons and Loop through the copy buttons
   const copy = document.querySelectorAll('.btn-Url');
   console.log(copy);
-    copy.forEach((btn) => {
+  copy.forEach((btn) => {
     btn.addEventListener('click', () => {
       btn.textContent = 'Copied!';
       btn.style.backgroundColor = '#3a3054';
@@ -56,7 +56,7 @@ async function postData(url) {
     console.log(data.result_url);
     displayData(data, url);
   } catch (err) {
-  console.log(err);
+    console.log(err);
   }
 }
 
@@ -97,4 +97,3 @@ form.addEventListener('submit', (e) => {
 input.addEventListener('keyup', () => {
   input.style.border = 'none';
 });
-
